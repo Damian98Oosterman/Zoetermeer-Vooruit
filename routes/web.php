@@ -23,3 +23,8 @@ Route::group(['prefix'=>'quiz'], function (){
     Route::get('/', 'QuizController@show');
     Route::get('{id}/questions', 'QuizController@showQuestions');
 });
+
+
+Route::group(['prefix'=>'question'], function(){
+    Route::get('{id}/answers', 'QuestionController@answers');
+});
