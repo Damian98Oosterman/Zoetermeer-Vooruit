@@ -16,4 +16,18 @@ class QuestionController extends Controller
         return view('forms.question.showanswers', ['answers'=>$answers]);
 
     }
+
+    public function add() {
+  		return view('forms.quiz.add')->with([
+  			'quiz' => Quiz::find(0),
+  		]);
+  	}
+
+  	public function store(Request $request) {
+  		$quiz = new Quiz;
+  		$quiz->title = $request->title;
+  		$quiz->description = $request->description;
+  		$quiz->save();
+  		return redirect()->route('');
+  	}
 }
