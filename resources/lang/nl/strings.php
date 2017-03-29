@@ -1,12 +1,16 @@
 <?php
 
 return [
-    'quizNav'=>'Enquetes',
+    'quiz'=>[
+      'nav' => 'Enquetes'
+      ]'Enquetes',
     'loginNav'=>'Inloggen',
     'registerNav'=>'Registreren',
     'quizzes'=>'enquetes',
     'quizLink'=>'enquete',
-    'titleColumn'=>'Titel',
+    'title' => [
+      'column' => 'Titel',
+    ]
     'descColumn'=>'Beschrijving',
     'startDateColumn'=>'Begindatum',
     'endDateColumn'=>'Einddatum',
