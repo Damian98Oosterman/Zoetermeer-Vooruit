@@ -20,24 +20,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                    foreach($quizes as $quiz){
-                                        $openDate=new DateTime($quiz->open_date);
-                                        $openDate=$openDate->format('d-m-Y H:m:s');
-                                        $closeDate=new DateTime($quiz->closing_date);
-                                        $closeDate=$closeDate->format('d-m-Y H:m:s');
-                                        echo '
-                                            <tr>
-                                                <td>'.$quiz->id.'</td>
-                                                <td>'.$quiz->quiz_title.'</td>
-                                                <td>'.$quiz->description.'</td>
-                                                <td>'.$openDate.'</td>
-                                                <td>'.$closeDate.'</td>
-                                                <td><a href="/quiz/'.$quiz->id.'/questions">'.__('show.action.name').' '.__('show.question.link').'</a></td>
-                                            </tr>
-                                        ';
+                            @foreach($quizes as $quiz){
+                                        <tr>
+                                            <td>{{ $quiz->id}}</td>
+                                            <td>{{ $quiz->title }}</td>
+                                            <td>{{ $quiz->description }}</td>
+                                            <td>{{ $quiz->open_date }}</td>
+                                            <td>{{ $quiz->closing_date }}</td>
+                                            <td><a href="/quiz/{{$quiz->id}}/questions">@lang('show.action.name') @lang('show.question.link').'</a></td>
+                                        </tr>
                                     }
-                                ?>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
