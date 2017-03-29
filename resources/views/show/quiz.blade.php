@@ -20,7 +20,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($quizes as $quiz){
+                            @foreach($quizes as $quiz)
                                         <tr>
                                             <td>{{ $quiz->id}}</td>
                                             <td>{{ $quiz->title }}</td>
@@ -29,7 +29,6 @@
                                             <td>{{ $quiz->closing_date }}</td>
                                             <td><a href="/quiz/{{$quiz->id}}/questions">@lang('show.action.name') @lang('show.question.link').'</a></td>
                                         </tr>
-                                    }
                                 @endforeach
                             </tbody>
                         </table>
