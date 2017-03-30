@@ -33,6 +33,6 @@ class QuizController extends Controller
 		$quiz->title = $request->title;
 		$quiz->description = $request->description;
     	$quiz->save();
-    	return Redirect::to('home')->with('message', __('quiz.message.add.success', ['']));
+    	return Redirect::to('home')->with('message', __('quiz.message.add.success'));
 	}
 }

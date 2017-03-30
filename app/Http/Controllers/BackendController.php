@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Collective\Html\FormFacade;
 
 class BackendController extends Controller
 {
@@ -14,7 +13,6 @@ class BackendController extends Controller
 		if(!Auth::user()->is_admin) {
 			
 		}
-		
 	}
 	
 }

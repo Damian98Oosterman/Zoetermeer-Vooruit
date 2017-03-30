@@ -19,14 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::group(['prefix'=>'enquete'], function (){
-    Route::get('/show', 'QuizController@show');
-    Route::get('{id}/vragen', ['uses'=>'QuizController@showQuestions']);
+Route::group(['prefix'=>'quiz'], function (){
+    Route::get('show', 'QuizController@show');
+    Route::get('{id}/vragen', 'QuizController@showQuestions');
+    Route::get('create', 'QuizController@add');
+    Route::post('create', 'QuizController@store');
 });
 
 Route::group(['prefix'=>'vraag'], function(){
     Route::get('{id}/antwoorden', ['uses'=>'QuestionController@show']);
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

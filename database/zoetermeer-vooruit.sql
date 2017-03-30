@@ -109,11 +109,11 @@ DEFAULT CHARACTER SET = utf8mb4;
 
 
 -- -----------------------------------------------------
--- Table `zoetermeer-vooruit`.`user`
+-- Table `zoetermeer-vooruit`.`users`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `zoetermeer-vooruit`.`user` ;
+DROP TABLE IF EXISTS `zoetermeer-vooruit`.`users` ;
 
-CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`user` (
+CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`users` (
   `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
   `last_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
@@ -142,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`user_question` (
   INDEX `idquestion_id` (`idquestion_id` ASC),
   CONSTRAINT `user_question_ibfk_1`
     FOREIGN KEY (`user_id`)
-    REFERENCES `zoetermeer-vooruit`.`user` (`id`),
+    REFERENCES `zoetermeer-vooruit`.`users` (`id`),
   CONSTRAINT `user_question_ibfk_2`
     FOREIGN KEY (`idquestion_id`)
     REFERENCES `zoetermeer-vooruit`.`question` (`id`))
