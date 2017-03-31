@@ -11,7 +11,9 @@ class QuizController extends Controller
 {
 	public function show() {
 		$quiz=new Quiz();
-		return view('forms.quiz.show', ['quizes'=>$quiz->getQuiz()]);
+		return view('forms.quiz.show')->with([
+			'quizes' => $quiz->getQuiz(),	
+		]);
 	}
 
 	public function showQuestions( $id ) {

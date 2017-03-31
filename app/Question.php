@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Quiz as Quiz;
 
 class Question extends Model
 {
-    protected $table='question';
+    protected $table = 'question';
 
-    public function show($id){
-        return Question::join('answer', 'question.id', '=', 'answer.question_id')->where('question_id', $id)->get();
+	public function quiz() {
+		return $this->belongsToOne(Quiz::class);
     }
 }
