@@ -8,7 +8,7 @@ Clone the repo and run these commands:
 composer install
 npm i
 cp .env.example .env 
-For windows OS: copy .env.example .env
+For Windows OS: copy .env.example .env
 php artisan key:generate
 ```
 Fill in your database credentials in the `.env` file.
