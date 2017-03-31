@@ -22,9 +22,14 @@ Route::get('/home', 'HomeController@index');
 Route::group(['prefix'=>'quiz'], function (){
     Route::get('/', 'QuizController@show');
     Route::get('{id}/questions', 'QuizController@showQuestions');
+    Route::get('create', 'QuizController@add');
+    Route::post('create', 'QuizController@store');
 });
-
 
 Route::group(['prefix'=>'question'], function(){
     Route::get('{id}/answers', 'QuestionController@answers');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
