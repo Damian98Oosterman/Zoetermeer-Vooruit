@@ -9,7 +9,7 @@ Clone the repo and run these commands:
 ```
 composer install
 npm i
-cp .env.example .env 
+cp .env.example .env
 php artisan key:generate
 ```
 
@@ -23,7 +23,7 @@ php artisan key:generate
 ```
 Fill in your database credentials in the `.env` file.
 
-If the styling doesnt work run these commands. 
+If the styling doesnt work run these commands.
 
 ```
 npm install gulp
