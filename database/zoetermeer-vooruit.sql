@@ -32,9 +32,15 @@ CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`quiz` (
   `description` VARCHAR(255) NOT NULL,
   `closing_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `open_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+<<<<<<< HEAD
   `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted_at` TIMESTAMP NULL,
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+=======
+  `created_at` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `deleted_at` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated_at` TIMESTAMP NOT NULL DEFAULT '0000-00-00 00:00:00',
+>>>>>>> 0ad3fd15462cdb117a6d9572a73e20b1156a8ace
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
@@ -47,7 +53,7 @@ DROP TABLE IF EXISTS `zoetermeer-vooruit`.`question` ;
 
 CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`question` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `title` VARCHAR(40) NOT NULL,
+  `title` INT(11) NOT NULL,
   `quiz_id` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `quiz_id` (`quiz_id` ASC),
@@ -109,11 +115,11 @@ DEFAULT CHARACTER SET = utf8mb4;
 
 
 -- -----------------------------------------------------
--- Table `zoetermeer-vooruit`.`user`
+-- Table `zoetermeer-vooruit`.`users`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `zoetermeer-vooruit`.`user` ;
+DROP TABLE IF EXISTS `zoetermeer-vooruit`.`users` ;
 
-CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`user` (
+CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`users` (
   `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `first_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
   `last_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
@@ -142,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`user_question` (
   INDEX `idquestion_id` (`idquestion_id` ASC),
   CONSTRAINT `user_question_ibfk_1`
     FOREIGN KEY (`user_id`)
-    REFERENCES `zoetermeer-vooruit`.`user` (`id`),
+    REFERENCES `zoetermeer-vooruit`.`users` (`id`),
   CONSTRAINT `user_question_ibfk_2`
     FOREIGN KEY (`idquestion_id`)
     REFERENCES `zoetermeer-vooruit`.`question` (`id`))
