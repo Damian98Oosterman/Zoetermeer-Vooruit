@@ -11,8 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/contact', function(){
+  return view('contact');
+});
+
+Route::get('/welkom', function () {
     return view('welcome');
+});
+
+Route::get('/', function() {
+  return view('welcome');
 });
 
 Auth::routes();

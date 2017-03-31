@@ -21,8 +21,10 @@
                   @yield('partial.nav')
               </ul>
 
-              <ul class="nav navbar-nav navbar-left">
+              <ul class="nav navbar-nav navbar-right">
                   @if (Auth::guest())
+                      <li><a href="welkom">Welkom</a></li>
+                      <li><a href="contact">Contact</a></li>
                       <li><a href="{{ route('login') }}">Login</a></li>
                       <li><a href="{{ route('register') }}">Register</a></li>
                   @else
