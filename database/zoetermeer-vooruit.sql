@@ -47,7 +47,7 @@ DROP TABLE IF EXISTS `zoetermeer-vooruit`.`question` ;
 
 CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`question` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `title` INT(11) NOT NULL,
+  `title` VARCHAR(40) NOT NULL,
   `quiz_id` INT(11) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `quiz_id` (`quiz_id` ASC),
