@@ -2,24 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use App\Quiz;
 use Illuminate\Http\Request;
 use App\Http\Requests\QuizRequest;
 use Illuminate\Support\Facades\Redirect;
+use App\Quiz;  
 
 class QuizController extends Controller
 {
+   public function __construct()
+   {
+      $this->middleware('auth');
+   }
+  
 	public function show() {
 		$quiz=new Quiz();
-		return view('forms.quiz.show')->with([
-			'quizes' => $quiz->getQuiz(),	
+		return view('show.quiz')->with([
+			'quizes' => Quiz::all(),	
 		]);
 	}
 
 	public function showQuestions( $id ) {
-		$quiz= Quiz::find($id);
-		$question=$quiz->questions;
-		return view('forms.quiz.showquestions', ['questions'=>$question]);
+		$question=Quiz::find($id)->questions;
+		return view('show.questions', ['questions'=>$question]);
 	}
 
 	public function add() {
