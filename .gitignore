@@ -13,3 +13,6 @@ Homestead.yaml
 .buildpath
 /public/css/app.*
 /public/js/app.js
+.buildpath
+.project
+.settings/
