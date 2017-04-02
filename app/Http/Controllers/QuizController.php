@@ -16,8 +16,7 @@ class QuizController extends Controller
    }
 
    public function showQuestions($id){
-       $data['id']=$id;
-        $question=Quiz::find($data['id'])->questions;
+        $question=Quiz::find($id)->questions;
        return view('show.questions', ['questions'=>$question]);
    }
 }
