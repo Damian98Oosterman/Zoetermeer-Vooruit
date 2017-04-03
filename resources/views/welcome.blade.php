@@ -4,9 +4,11 @@
     <script>tinymce.init({ selector:'textarea' });</script>
 
 <header>
+  <div class="dark">
   <center>
     <img src="{{ asset('img\logo\LogoLarge.png') }}" width="500" class="img-responsive">
     <h1 class="yellowHeader">Omdat het ook anders kan!</h1>
+  </div>
 </header>
 <section class="color-white">
   <div class="">
