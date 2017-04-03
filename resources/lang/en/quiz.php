@@ -1,14 +1,19 @@
-<?php 
+<?php
 return [
-	'form' => [
-		'formtitle' => 'Add new Quiz',
-		'title' => 'Title',
-		'description' => 'Description',
-	],
 	'message' => [
 		'add' => [
 			'success' => 'Quiz added.',
-			'fail' => 'Cannot create quiz.'
+			'fail' => 'Cannot create quiz.',
+		]
+	],
+	'read' => [
+		'action' => 'View',
+		'column'=> [
+			'title' => 'Title',
+			'description' => 'Description',
+			'open_date' => 'Opening date',
+			'close_date' => 'End date',
+			'action' => 'Action',
 		]
 	]
 ]
