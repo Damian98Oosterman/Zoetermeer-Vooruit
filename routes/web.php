@@ -20,15 +20,20 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix'=>'quiz'], function (){
-    Route::get('/', 'QuizController@show');
-    Route::get('{id}/questions', 'QuizController@showQuestions');
+    Route::get('/', 'QuizController@view');
+    Route::get('/{id}', 'QuestionController@view')->where('id', '[0-9]+');
     Route::get('create', 'QuizController@add');
     Route::post('create', 'QuizController@store');
 });
 
-Route::group(['prefix'=>'vraag'], function(){
-    Route::get('{id}/antwoorden', ['uses'=>'QuestionController@show']);
+Route::group(['prefix'=>'question'], function(){
+  Route::get('/', 'QuestionController@view');
+	Route::get('{id}', 'QuestionController@form')->where('id', '[0-9]+');
+    Route::post('/{id}', 'QuestionController@edit')->where('id', '[0-9]+');
 });
+
+
+Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
