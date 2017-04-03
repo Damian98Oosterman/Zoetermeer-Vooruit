@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix'=>'quiz'], function (){
     Route::get('/', 'QuizController@view');
@@ -31,9 +28,6 @@ Route::group(['prefix'=>'question'], function(){
 	Route::get('{id}', 'QuestionController@form')->where('id', '[0-9]+');
     Route::post('/{id}', 'QuestionController@edit')->where('id', '[0-9]+');
 });
-
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
