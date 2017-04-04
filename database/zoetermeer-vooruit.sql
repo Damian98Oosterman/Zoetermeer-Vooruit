@@ -53,7 +53,8 @@ CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`question` (
   INDEX `quiz_id` (`quiz_id` ASC),
   CONSTRAINT `question_ibfk_1`
     FOREIGN KEY (`quiz_id`)
-    REFERENCES `zoetermeer-vooruit`.`quiz` (`id`))
+    REFERENCES `zoetermeer-vooruit`.`quiz` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+    )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
@@ -115,8 +116,9 @@ DROP TABLE IF EXISTS `zoetermeer-vooruit`.`users` ;
 
 CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`users` (
   `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `first_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
-  `last_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
+  `name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
+  `first_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NULL,
+  `last_name` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NULL,
   `email` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
   `password` VARCHAR(255) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NOT NULL,
   `remember_token` VARCHAR(100) CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci' NULL DEFAULT NULL,
