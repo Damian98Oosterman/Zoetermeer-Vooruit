@@ -30,7 +30,13 @@
                                             <td>{{$quiz->description}}</td>
                                             <td>{{$openDate}}</td>
                                             <td>{{$closeDate}}</td>
-                                            <td><a href="/quiz/{{$quiz->id}}">@lang('quiz.read.action')</a></td>
+                                            <td>
+                                            	<a href="/quiz/{{$quiz->id}}" class="btn btn-success">@lang('quiz.read.action')</a>
+												{{Form::open(['url' => 'quiz/delete'])}}
+												{{Form::hidden('id', $quiz->id)}}
+												{{Form::submit(__('quiz.message.delete.button'),['class' => 'btn btn-danger'])}}
+												{{Form::close()}}
+                                            </td>
                                         </tr>
                                   @endforeach
                             </tbody>
