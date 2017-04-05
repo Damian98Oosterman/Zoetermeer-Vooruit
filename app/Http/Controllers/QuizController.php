@@ -28,4 +28,10 @@ class QuizController extends Controller
        		'quizzes' => Quiz::all(),
        ));
    }
+   
+    public function delete(Request $request) {
+		$quiz = Quiz::find(intval($request->id));
+		$quiz->delete();
+		return Redirect::to('home')->with('message', __('quiz.message.delete.success'));
+	}
 }
