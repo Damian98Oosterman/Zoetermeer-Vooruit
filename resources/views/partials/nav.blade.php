@@ -20,7 +20,6 @@
               <ul class="nav navbar-nav">
                   @yield('partial.nav')
               </ul>
-
               <ul class="nav navbar-nav navbar-left">
                   @if (Auth::guest())
                       <li><a href="welcome">Home</a></li>
