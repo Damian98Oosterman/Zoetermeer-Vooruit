@@ -25,7 +25,6 @@ Route::group(['prefix'=>'quiz'], function() {
     Route::post('create', 'QuizController@store');
     Route::get('{id}/make', 'QuestionController@make')->where('id', '[0-9]+');
     Route::post('{id}/make', 'ReplyController@make')->where('id', '[0-9]+');
-    Route::get('completed', 'ReplyController@completed');
 });
 
 Route::group(['prefix'=>'question'], function(){
