@@ -9,13 +9,6 @@ use App\Quiz;
 
 class QuizController extends Controller
 {
-
-	public function showQuestions( $id ) {
-		$quiz= Quiz::find($id);
-		$question=$quiz->questions;
-		return view('question.view', ['questions'=>$question]);
-	}
-
 	public function add() {
 		return view('quiz.add')->with([
     		'quiz' => Quiz::find(0),
