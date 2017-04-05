@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,6 +21,8 @@ Route::group(['prefix'=>'quiz'], function() {
     Route::post('/delete', 'QuizController@delete');
     Route::get('create', 'QuizController@add');
     Route::post('create', 'QuizController@store');
+    Route::get('{id}/make', 'QuestionController@make')->where('id', '[0-9]+');
+    Route::post('{id}/make', 'ReplyController@make')->where('id', '[0-9]+');
 });
 
 Route::group(['prefix'=>'question'], function(){

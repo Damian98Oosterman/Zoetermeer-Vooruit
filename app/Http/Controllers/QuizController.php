@@ -9,7 +9,6 @@ use App\Quiz;
 
 class QuizController extends Controller
 {
-
 	public function add() {
 		return view('quiz.add')->with([
     		'quiz' => Quiz::find(0),
