@@ -12,6 +12,7 @@
 */
 
 
+
 Route::get("contact", "RoutingController@contact");
 Route::get("welcome", "RoutingController@welcome");
 Route::get("/", "RoutingController@landing");
