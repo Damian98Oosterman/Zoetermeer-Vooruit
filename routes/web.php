@@ -11,6 +11,12 @@
 |
 */
 
+
+
+Route::get("contact", "RoutingController@contact");
+Route::get("welcome", "RoutingController@welcome");
+Route::get("/", "RoutingController@landing");
+
 Route::group(['prefix'=>'quiz'], function() {
     Route::get('/', 'QuizController@view');
     Route::get('/{id}', 'QuestionController@view')->where('id', '[0-9]+');

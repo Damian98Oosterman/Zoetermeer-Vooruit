@@ -9,4 +9,13 @@ class RoutingController extends Controller
     public function welcome() {
     	return view('welcome');
 	}
+
+  public function contact(){
+    return view('contact');
+  }
+
+  public function landing()
+  {
+    return redirect('welcome');
+  }
 }

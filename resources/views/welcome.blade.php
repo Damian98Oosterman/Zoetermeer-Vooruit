@@ -2,7 +2,7 @@
 @section('content')
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  
+
     <script>tinymce.init({ selector:'textarea' });</script>
     <script>
     $(document).ready(function(){
@@ -25,7 +25,7 @@
   <div class="dark">
   <center>
     <img src="{{ asset('img\logo\LogoLarge.png') }}" width="500" class="img-responsive">
-    <h1 class="yellowHeader">Omdat het ook anders kan!</h1>
+    <h1 class="yellowHeader">Omdat het anders kan!</h1>
   </div>
 </header>
 <section class="color-white">
