@@ -25,8 +25,4 @@ class ReplyController extends Controller
 
         return Redirect::to('home')->with('message', __('quiz.message.make.finished'));
     }
-
-    public function completed   (){
-        return view('quiz.completed');
-    }
 }
