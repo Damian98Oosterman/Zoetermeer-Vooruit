@@ -23,7 +23,7 @@ class ReplyController extends Controller
         }
         DB::table('reply')->insert($answers);
 
-        return Redirect::to('quiz/completed')->with('message', __('quiz.message.make.finished'));
+        return Redirect::to('home')->with('message', __('quiz.message.make.finished'));
     }
 
     public function completed   (){
