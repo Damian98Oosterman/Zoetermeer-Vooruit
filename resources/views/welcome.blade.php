@@ -14,7 +14,7 @@
             var randomNumber = Math.floor(Math.random() * images.length);
             var bgImg = 'url(' + images[randomNumber] + '';
 
-            $('header').css({'background-image':bgImg, 'background-size':'cover', });
+            $('header').css({'background-image':bgImg, 'background-size':'cover',});
             console.log(bgImg);
             console.log(randomNumber);
     });
