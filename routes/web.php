@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,26 +9,22 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
 Route::group(['prefix'=>'quiz'], function (){
-    Route::get('/', 'QuizController@show');
-    Route::get('{id}/questions', 'QuizController@showQuestions');
+    Route::get('/', 'QuizController@view');
+    Route::get('/{id}', 'QuestionController@view')->where('id', '[0-9]+');
     Route::get('create', 'QuizController@add');
     Route::post('create', 'QuizController@store');
+    Route::get('{id}/make', 'QuestionController@make')->where('id', '[0-9]+');
+    Route::post('{id}/make', 'ReplyController@make')->where('id', '[0-9]+');
+    Route::get('completed', 'ReplyController@completed');
 });
-
 Route::group(['prefix'=>'question'], function(){
-    Route::get('{id}/answers', 'QuestionController@answers');
+    Route::get('/', 'QuestionController@view');
+    Route::get('{id}', 'QuestionController@form')->where('id', '[0-9]+');
+    Route::post('/{id}', 'QuestionController@edit')->where('id', '[0-9]+');
 });
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index');
+Auth::routes();
