@@ -98,7 +98,7 @@ COLLATE = utf8mb4_unicode_ci;
 
 DROP TABLE IF EXISTS `zoetermeer-vooruit`.`reply` ;
 
-CREATE TABLE IF NOT EXIST `zoetermeer-vooruit`.`reply` (
+CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`reply` (
   `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `question_id` int(11) NOT NULL,
   `answer_id` int(11) NOT NULL,
