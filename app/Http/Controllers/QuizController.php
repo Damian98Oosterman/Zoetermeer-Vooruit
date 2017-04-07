@@ -33,4 +33,10 @@ class QuizController extends Controller
 		$quiz->delete();
 		return Redirect::to('home')->with('message', __('quiz.message.delete.success'));
 	}
+
+	public function make($id){
+        return view('quiz.make')->with(array(
+            'questions' => Quiz::find($id)->questions
+        ));
+    }
 }
