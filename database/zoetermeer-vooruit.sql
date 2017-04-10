@@ -94,17 +94,16 @@ COLLATE = utf8mb4_unicode_ci;
 
 -- -----------------------------------------------------
 -- Table `zoetermeer-vooruit`.`reply`
--- -----------------------------------------------------
+-- -------------------------------------------------
+
 DROP TABLE IF EXISTS `zoetermeer-vooruit`.`reply` ;
 
 CREATE TABLE IF NOT EXISTS `zoetermeer-vooruit`.`reply` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `answer_id` INT(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `answer_id` (`answer_id` ASC),
-  CONSTRAINT `reply_ibfk_1`
-    FOREIGN KEY (`answer_id`)
-    REFERENCES `zoetermeer-vooruit`.`answer` (`id`))
+  `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `question_id` int(11) NOT NULL,
+  `answer_id` int(11) NOT NULL,
+  FOREIGN KEY (`question_id`) REFERENCES `question` (`id`),
+  FOREIGN KEY (`answer_id`) REFERENCES `answer` (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
