@@ -18,4 +18,9 @@ class RoutingController extends Controller
   {
     return redirect('welcome');
   }
+
+  public function statistics()
+  {
+    return view('statistics');
+  }
 }
