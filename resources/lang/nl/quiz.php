@@ -1,25 +1,26 @@
 <?php
 return [
-    'table'=>[
-        'columns'=>[
-            'title'=>'Titel',
-            'description'=>'Beschrijving',
-            'startdate'=>'Startdatum',
-            'enddate'=>'Einddatum',
-            'action'=>'Actie',
-        ],
-        'link'=>'Toon vragen',
-    ],
-    'header'=>'Enquetes',
-  'form' => [
-		'formtitle' => 'Voeg nieuwe enquete toe',
-		'title' => 'Titel',
-		'description' => 'Beschrijving',
-	],
 	'message' => [
 		'add' => [
 			'success' => 'Enquete toegevoegd',
-			'fail' => 'Er was een probleem tijdens het toevoegen van de enquete.',
+			'fail' => 'Kon geen Enquete maken',
 		],
+		'delete' => [
+			'success' => 'Enquete verwijderd',
+			'fail' => 'Kon de enquete niet verwijderen',
+			'button' => "Verwijder",
+		]
 	],
-];
+	'read' => [
+		'action' => 'Toon vragen',
+		'title' => 'Enquetes',
+		'column'=> [
+			'title' => 'Titel',
+			'description' => 'Beschrijving',
+			'open_date' => 'Startdatum',
+			'close_date' => 'Einddatum',
+			'action' => 'Actie',
+		]
+	]
+]
+?>
