@@ -21,7 +21,6 @@
 
     </script>
 
-<div id="homepage">
 <header>
   <div class="dark">
   <center>
@@ -29,7 +28,6 @@
     <h1 class="yellowHeader">Omdat het ook anders kan!</h1>
   </div>
 </header>
-</div>
 <section class="color-white">
   <div class="container">
       <br>
