@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\QuizRequest;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use App\Quiz;
 
@@ -20,8 +21,22 @@ class QuizController extends Controller
 		$quiz->title = $request->title;
 		$quiz->description = $request->description;
     	$quiz->save();
+
+        $questions = array();
+        $i=0;
+
+        foreach ($request->questions as $question){
+
+            $questions[$i++] = array('title' => $question, 'quiz_id' => $quiz->id);
+            if ($question == null){
+                array_pop($questions);
+            }
+        }
+        DB::table('question')->insert($questions);
+
     	return Redirect::to('home')->with('message', __('quiz.message.add.success'));
 	}
+
     public function view(){
        return view('quiz.view')->with(array(
        		'quizzes' => Quiz::all(),
