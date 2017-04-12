@@ -31,5 +31,13 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 
+<<<<<<< HEAD
+=======
+    <!-- ChartJS components -->
+    <script src="{{ asset('bower_components/chart.js/dist/Chart.min.js') }}"></script>
+
+@include('partials.footer')
+
+>>>>>>> 001281788637a805e12eb53275858e562de50d05
 </body>
 </html>
