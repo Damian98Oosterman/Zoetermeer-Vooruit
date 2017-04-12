@@ -1,5 +1,5 @@
 body{
-  //background-color: #214b8c;
+  background-color: $body-bg;
 }
 
 #app > header > div > center > img
@@ -38,12 +38,4 @@ p{
 
 .chart{
   margin-top: 6%;
-}
-
-.footer{
-  background-color: #222;
-  height: 30px;
-  color: white;
-  font-size: 15px;
-  text-align: center;
 }
