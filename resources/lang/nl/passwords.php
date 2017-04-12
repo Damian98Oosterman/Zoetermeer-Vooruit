@@ -16,7 +16,7 @@ return [
     'password' => 'Wachtwoorden moeten minimaal zes tekens lang zijn en overeenkomen met de bevestiging.',
     'reset' => 'Uw wachtwoord is gereset!',
     'sent' => 'Uw heeft een email ontvangen met daarin de reset link!',
-    'token' => 'Deze wachtwoord reset token is ongeldig.',
+    'token' => 'Resetcode ongeldig!',
     'user' => "We kunnen geen gebruiker met dat e-mailadres vinden.",
 
 ];
