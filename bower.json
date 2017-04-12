@@ -1,0 +1,21 @@
+{
+  "name": "Zoetermeer-vooruit",
+  "description": "",
+  "main": "",
+  "authors": [
+    "MegaXLR <admin@megaxlr.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/megaxlr/Zoetermeer-vooruit",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": "^2.5.0"
+  }
+}
