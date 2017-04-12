@@ -65,6 +65,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     Register
                                 </button>
+                                <a class="btn btn-primary" href="/login">
+                                    Hier al geweest? Log dan in!
+                                </a>
                             </div>
                         </div>
                     </form>
