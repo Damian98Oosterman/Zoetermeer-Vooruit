@@ -1,37 +1,36 @@
-let util=require("../util/util.js");
-if (util.isRoute('quiz/{id}/statistics')) {
+let util = require("../util/util.js");
 
-  util.ajaxPost([],function(data){
-    var randomScalingFactor = function() {
+
+util.ajaxPost(document.getElementById('quiz-id'), function(data) {
+    let randomScalingFactor = function() {
         return Math.round(Math.random() * 100);
     };
 
-    var config = {
+    let config = {
         type: 'pie',
         data: {
             datasets: [{
-                data: [
-                ],
+                data: [],
                 backgroundColor: [
+                    window.chartColors.red,
+                    window.chartColors.orange,
+                    window.chartColors.yellow,
+                    window.chartColors.green,
+                    window.chartColors.blue,
                 ],
                 label: 'Dataset 1'
             }],
-            labels: [
-            ]
+            labels: []
         },
         options: {
             responsive: true
         }
     };
 
-    window.onload = function() {
-        var ctx1 = document.getElementById("chart-area").getContext("2d");
-        window.myPie = new Chart(ctx, config);
-    };
 
-    var colorNames = Object.keys(window.chartColors);
+    let colorNames = Object.keys(window.chartColors);
     document.getElementById('addDataset').addEventListener('click', function() {
-        var newDataset = {
+        let newDataset = {
             backgroundColor: [],
             data: [],
             label: 'New dataset ' + config.data.datasets.length,
@@ -41,28 +40,17 @@ if (util.isRoute('quiz/{id}/statistics')) {
         window.myPie.update();
     });
 
-    var chartColors = {
-    	red: 'rgb(255, 99, 132)',
-    	orange: 'rgb(255, 159, 64)',
-    	yellow: 'rgb(255, 205, 86)',
-    	lime: 'rgb(75, 192, 192)',
-    	blue: 'rgb(54, 162, 235)',
-    	purple: 'rgb(153, 102, 255)',
-    	grey: 'rgb(231,233,237)',
-    	pink: 'rgb(255,105,180)',
-    	violet: 'rgb(255,062,150)',
-    	gold: 'rgb(255,215,000)',
-    	green: 'rgb(034,139,034)',
-    	badass: 'rgb(186, 218, 85)',
-    	chucknorris: 'rgb(192,000,000)' };
+    let questions = [];
 
-  for (var i = 0; i < response.length; i++) {
-    for (var j = 0; j < response.length; i++) {
-      config.data.datasets[0].backgroundColor = chartColors[j % chartColors.length];
-      config.data.datasets[0].labels = response[i][j].name;
-      config.data.datasets[0].data = response[i][j].frequency;
+    for (let question in response) {
+        if (response.hasOwnProperty(question)) {
+            questions[questions.length] = document.createElement("canvas");
+            questions[questions.length - 1].setAttribute('class', 'col-md-3 col-sm-6 col-xs-12');
+            for (let i = 0; i < question.length; i++) {
+                config.data.datasets[0].data.push(question[i].frequency);
+                config.data.datasets[0].labels.push(question[i].name);
+            }
+        }
     }
-  }
-  })
 
-}
+})
