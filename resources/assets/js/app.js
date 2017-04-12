@@ -9,6 +9,7 @@
 require('./bootstrap');
 
 require('./chart/chart.js');
+require('./quiz/form.js');
 
 require('./Chart.min.js');
 
