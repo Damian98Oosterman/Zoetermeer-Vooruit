@@ -14,7 +14,7 @@
                 <br />
                 <br />
                 <h3><i class="fa fa-envelope fa-1x" style="line-height:6%;"></i> E-Mail Adres:</h3>
-                <p style="margin-top:6%;line-height:35%">contact@zoetermeervooruit.nl</p>
+                <p style="margin-top:6%;line-height:35%"><a style="color:#636b6f; text-decoration:none;" href="mailto:contact@zoetermeervooruit.nl">contact@zoetermeervooruit.nl</a></p>
                 <br />
                 <br />
                 <h3><i class="fa fa-user fa-1x" style="line-height:6%;"></i> Contactpersoon:</h3>
@@ -32,18 +32,18 @@
                         <legend class="text-center header">@lang('contact.form.heading')</legend>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control" required>
                             </div>
                         </div>
 
@@ -55,7 +55,7 @@
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7" required></textarea>
                             </div>
                         </div>
 
