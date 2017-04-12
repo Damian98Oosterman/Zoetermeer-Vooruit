@@ -10,10 +10,11 @@
 |
 */
 
-Route::get("statistics", "RoutingController@statistics");
 Route::get("contact", "RoutingController@contact");
 Route::get("welcome", "RoutingController@welcome");
 Route::get("/", "RoutingController@landing");
+Route::get('/home/edit', 'RoutingController@editHome');
+Route::post('/home/edit', 'RoutingController@saveHTML');
 
 Route::group(['prefix'=>'quiz'], function() {
     Route::get('/', 'QuizController@view');
@@ -23,6 +24,7 @@ Route::group(['prefix'=>'quiz'], function() {
     Route::post('create', 'QuizController@store');
     Route::get('{id}/make', 'QuestionController@make')->where('id', '[0-9]+');
     Route::post('{id}/make', 'ReplyController@make')->where('id', '[0-9]+');
+	Route::get("{id}/statistics", "QuizController@statistics")->where('id', '[0-9]+');
 });
 
 Route::group(['prefix'=>'question'], function(){

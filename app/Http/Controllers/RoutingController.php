@@ -10,12 +10,19 @@ class RoutingController extends Controller
     	return view('welcome');
 	}
 
-  public function contact(){
-    return view('contact');
-  }
+	public function contact(){
+    	return view('contact');
+  	}
 
-  public function landing()
-  {
-    return redirect('welcome');
-  }
+  	public function landing() {
+    	return redirect('welcome');
+  	}
+  	
+  	public function editHome() {
+  		return view('home-edit');
+  	}
+  
+  	public function saveHTML(Request $request) {
+  		Storage::disk('local')->put('home.txt', $request->html);
+  	}
 }
