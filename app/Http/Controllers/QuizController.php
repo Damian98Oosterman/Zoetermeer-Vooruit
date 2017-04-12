@@ -26,9 +26,8 @@ class QuizController extends Controller
         $i=0;
 
         foreach ($request->questions as $question){
-            $quiz_id = $quiz->id;
 
-            $questions[$i++] = array('title' => $question, 'quiz_id' => $quiz_id);
+            $questions[$i++] = array('title' => $question, 'quiz_id' => $quiz->id);
             if ($question == null){
                 array_pop($questions);
             }
