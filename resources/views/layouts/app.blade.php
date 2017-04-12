@@ -34,5 +34,7 @@
     <!-- ChartJS components -->
     <script src="{{ asset('bower_components/chart.js/dist/Chart.min.js') }}"></script>
 
+@include('partials.footer')
+
 </body>
 </html>

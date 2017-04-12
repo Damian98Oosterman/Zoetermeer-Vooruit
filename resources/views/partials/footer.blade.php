@@ -1,1 +1,1 @@
-<footer class="footer"><p>©2017 Zoetermeer Vooruit</p></footer>
+<footer class="footer"><p>&copy;2017 Zoetermeer Vooruit</p></footer>
