@@ -1,6 +1,10 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: hsla(233, 25%, 97%, 1);
+
+//hsl(197, 39%, 94%)
+
+$bright-blue: hsla(233, 100%, 91%, 1);
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -36,3 +40,6 @@ $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
 $panel-default-heading-bg: #fff;
+
+$nav-gray: hsla(0, 0%, 80%, 1);
+$nav-text: #3b3b3b;

@@ -1,0 +1,9 @@
+.navbar.navbar-default {
+	background-color: $nav-gray;
+	a {
+		color: $nav-text;
+	}
+	li > a {
+		color: $nav-text;
+	}
+}
