@@ -14,8 +14,11 @@ class RoutingController extends Controller
     return view('contact');
   }
 
-  public function landing()
-  {
+  public function landing(){
     return redirect('welcome');
+  }
+
+  public function about(){
+    return view('about');
   }
 }
