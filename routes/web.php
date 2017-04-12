@@ -13,6 +13,7 @@
 Route::get("contact", "RoutingController@contact");
 Route::get("welcome", "RoutingController@welcome");
 Route::get("/", "RoutingController@landing");
+Route::get("about", "RoutingController@about");
 
 Route::group(['prefix'=>'quiz'], function() {
     Route::get('/', 'QuizController@view');

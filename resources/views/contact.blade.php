@@ -10,20 +10,21 @@
         <div class="col-sm-6">
             <div class="well">
             <legend class="text-center header">@lang('contact.panel.heading')</legend>
-                <h3><i class="fa fa-home fa-1x" style="line-height:6%;"></i> Adres:</h3>               
-                <p style="margin-top:6%;line-height:35%">Van Boisotring 29,<br><br><br>2722 AA Zoetermeer</p>
+                <h3><i class="fa fa-user fa-1x" style="line-height:6%;"></i> Contactpersoon:</h3>
+                <p style="margin-top:6%;line-height:35%">M.J. (Juliëtte) Meurs-Troch</p>
+                <br />
+                <br />
+				<h3><i class="fa fa-home fa-1x" style="line-height:6%;"></i> Adres:</h3>   
+				<p style="margin-top:6%;line-height:35%">Van Boisotring 29,<br><br><br>2722 AA Zoetermeer</p>
                 <br />
                 <br />
                 <h3><i class="fa fa-envelope fa-1x" style="line-height:6%;"></i> E-Mail Adres:</h3>
-                <p style="margin-top:6%;line-height:35%"><a style="color:#636b6f; text-decoration:none;" href="mailto:contact@zoetermeervooruit.nl">contact@zoetermeervooruit.nl</a></p>
-                <br />
-                <br />
-                <h3><i class="fa fa-user fa-1x" style="line-height:6%;"></i> Contactpersoon:</h3>
-                <p style="margin-top:6%;line-height:35%">Juliette-Meurs</p>
+                <p style="margin-top:6%;line-height:35%"><a class="email-fix" href="mailto:contact@zoetermeervooruit.nl">contact@zoetermeervooruit.nl</a></p>
                 <br />
                 <br />
                 <h3><i class="fa fa-phone fa-1x" style="line-height:6%;"></i>Telefoonnummer:</h3>
-                <p style="margin-top:6%;line-height:35%">0612345678</p>
+                <p style="margin-top:6%;line-height:35%">06-55727274</p>
+
             </div>
         </div>
         <div class="col-sm-6">
@@ -56,7 +57,7 @@
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7" required></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here. We will get back to you within 2 business days." rows="7" required></textarea>
                             </div>
                         </div>
 
