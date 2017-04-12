@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\QuizRequest;
 use Illuminate\Support\Facades\Redirect;
 use App\Quiz;
+use Illuminate\Support\Facades\DB;
 
 class QuizController extends Controller
 {
@@ -38,5 +39,18 @@ class QuizController extends Controller
         return view('quiz.make')->with(array(
             'questions' => Quiz::find($id)->questions
         ));
+    }
+    
+    public function statistics(Request $request) {
+    	$quiz = Quiz::find($request->id);
+    	$stats = [];
+    	foreach ($quiz->questions as $question) {
+    		$stats[$question->title] = DB::select('SELECT COUNT(*) AS frequency, answer.name FROM reply 
+INNER JOIN answer ON reply.answer_id=answer.id
+WHERE reply.question_id = ?
+GROUP BY answer.name
+ORDER BY frequency DESC;', [$question->id]);
+    	}
+    	return $stats;
     }
 }

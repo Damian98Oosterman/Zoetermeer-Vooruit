@@ -10,7 +10,6 @@
 |
 */
 
-Route::get("statistics", "RoutingController@statistics");
 Route::get("contact", "RoutingController@contact");
 Route::get("welcome", "RoutingController@welcome");
 Route::get("/", "RoutingController@landing");
@@ -23,6 +22,8 @@ Route::group(['prefix'=>'quiz'], function() {
     Route::post('create', 'QuizController@store');
     Route::get('{id}/make', 'QuizController@make')->where('id', '[0-9]+');
     Route::post('{id}/make', 'ReplyController@make')->where('id', '[0-9]+');
+    Route::get("{id}/statistics", "RoutingController@statistics")->where('id', '[0-9]+');
+    Route::post('{id}/statistics', 'QuizController@statistics')->where('id', '[0-9]+');
 });
 
 Route::group(['prefix'=>'question'], function(){
