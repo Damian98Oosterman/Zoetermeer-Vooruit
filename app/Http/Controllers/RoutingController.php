@@ -18,4 +18,11 @@ class RoutingController extends Controller
   {
     return redirect('welcome');
   }
+  
+  public function statistics($id) {
+  	$this->middleware('admin');
+  	return view('quiz.statistics')->with(array(
+  			'id' => $id,
+  	));
+  }
 }
