@@ -1,4 +1,7 @@
 #app
 {
-  padding-top: 64px;
+	margin-top: 50px;
+	> .container:nth-child(1) {
+		margin-top: 14px;
+	}
 }

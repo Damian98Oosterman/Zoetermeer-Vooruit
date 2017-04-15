@@ -1,5 +1,10 @@
 body{
-  //background-color: #214b8c;
+  background-color: $body-bg;
+}
+
+#app > header > div > center > img
+{
+  margin-top: 50px;
 }
 
 h1{
@@ -28,17 +33,22 @@ p{
 }
 
 .navspace{
-  margin: 4%;
+  margin: 0;
 }
 
 .chart{
   margin-top: 6%;
 }
 
-.footer{ 
-  background-color: #222; 
-  height: 30px; 
-  color: white; 
-  font-size: 15px;  
-  text-align: center;
+.mapmargin{
+  padding-bottom: 50px;
+}
+
+.email-fix{
+ color:#636b6f;
+ text-decoration:none;
+}
+
+.email-fix:hover{
+ color:#636b6f;
 }

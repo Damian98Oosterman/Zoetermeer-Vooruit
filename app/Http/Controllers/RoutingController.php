@@ -8,16 +8,9 @@ use Illuminate\Support\Facades\Redirect;
 
 class RoutingController extends Controller
 {
-    public function welcome() {
-    	return view('welcome');
-	}
 
 	public function contact(){
     	return view('contact');
-  	}
-
-  	public function landing() {
-    	return redirect('welcome');
   	}
 
   	public function editHome() {
@@ -32,4 +25,12 @@ class RoutingController extends Controller
   			return Redirect::to('home')->with('error', 'That is not a valid page. please enter more than 1 character.');
   		}
   	}
+
+  public function landing(){
+    return redirect('welcome');
+  }
+
+  public function about(){
+    return view('about');
+  }
 }

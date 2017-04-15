@@ -25,7 +25,7 @@ class QuizRequest extends FormRequest
     {
         return [
             'title' => ['max:40', 'required'],
-        	'description' => ['max:255','required']
+        	'description' => ['max:255','required'],
         ];
     }
 }

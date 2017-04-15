@@ -22,8 +22,22 @@ class QuizController extends Controller
 		$quiz->title = $request->title;
 		$quiz->description = $request->description;
     	$quiz->save();
+
+        $questions = array();
+        $i=0;
+
+        foreach ($request->questions as $question){
+
+            $questions[$i++] = array('title' => $question, 'quiz_id' => $quiz->id);
+            if ($question == null){
+                array_pop($questions);
+            }
+        }
+        DB::table('question')->insert($questions);
+
     	return Redirect::to('home')->with('message', __('quiz.message.add.success'));
 	}
+
     public function view(){
        return view('quiz.view')->with(array(
        		'quizzes' => Quiz::all(),
@@ -35,6 +49,7 @@ class QuizController extends Controller
 		$quiz->delete();
 		return Redirect::to('home')->with('message', __('quiz.message.delete.success'));
 	}
+
 	
 	public function statistics($id) {
 		$quiz = Quiz::find($id);
@@ -44,4 +59,11 @@ class QuizController extends Controller
 		}
 		return $answers;
 	}
+
+
+	public function make($id){
+        return view('quiz.make')->with(array(
+            'questions' => Quiz::find($id)->questions
+        ));
+    }
 }
