@@ -6,6 +6,9 @@
     	@if(Session::has('message'))
     		<div class="alert alert-info">{{Session::get('message')}}</div>
     	@endif
+    	@if(Session::has('error'))
+    		<div class="alert alert-danger">{{Session::get('error')}}</div>
+    	@endif
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
