@@ -1,0 +1,26 @@
+{
+  "name": "Zoetermeer-vooruit",
+  "description": "",
+  "main": "",
+  "authors": [
+    "MegaXLR <admin@megaxlr.net>",
+    "Damian Oosterman <damian.oosterman@gmail.com>",
+    "Marfjeh <crazymarf@marfprojects.nl>",
+    "GrayNeko <info@davidmesman.nl>",
+    "Robin Kuijpers <contact@robinkuijpers.nl>",
+    "Artyssee <martijnvhalderen@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/megaxlr/Zoetermeer-vooruit",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chart.js": "^2.5.0"
+  }
+}
