@@ -18,19 +18,18 @@
 
           <div class="collapse navbar-collapse" id="app-navbar-collapse">
               <ul class="nav navbar-nav">
-                  @yield('partial.nav')
               </ul>
               <ul class="nav navbar-nav navbar-left">
                   @if (Auth::guest())
-                      <li><a href="welcome">Home</a></li>
-                      <li><a href="about">Over ons</a></li>
-                      <li><a href="contact">Contact</a></li>
+                      <li><a href="{{url('welcome')}}">Home</a></li>
+                      <li><a href="{{url('about')}}">Over ons</a></li>
+                      <li><a href="{{url('contact')}}">Contact</a></li>
               </ul>
                   @else
-                    <li><a href="welcome">Home</a></li>
-                    <li><a href="about">Over ons</a></li>
-                    <li><a href="enquete">Enquetes</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="{{url('home')}}">Home</a></li>
+                    <li><a href="{{url('about')}}">Over ons</a></li>
+                    <li><a href="{{url('quiz')}}">Enquetes</a></li>
+                    <li><a href="{{url('contact')}}">Contact</a></li>
                   </ul>
                     <ul class="nav navbar-nav navbar-right">
                       <li class="dropdown">
