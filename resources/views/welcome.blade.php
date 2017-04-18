@@ -15,8 +15,6 @@
             var bgImg = 'url(' + images[randomNumber] + '';
 
             $('header').css({'background-image':bgImg, 'background-size':'cover',});
-            console.log(bgImg);
-            console.log(randomNumber);
     });
 
     </script>
