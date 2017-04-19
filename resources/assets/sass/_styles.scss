@@ -2,11 +2,6 @@ body{
   background-color: $body-bg;
 }
 
-#app > header > div > center > img
-{
-  margin-top: 50px;
-}
-
 h1{
   font-family: "Myriad Pro", "Myriad", "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: bold;
@@ -50,6 +45,6 @@ p{
 }
 
 // TODO: Find a proper fix for this
-#app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div{
+#app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div.well:not(.panel*){
   height: 575px;
-} 
+}

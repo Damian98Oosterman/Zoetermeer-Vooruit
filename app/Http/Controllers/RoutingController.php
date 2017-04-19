@@ -15,7 +15,19 @@ class RoutingController extends Controller
   	}
 
   	public function editHome() {
-  		return view('home-edit');
+  		return view('editor')->with(array(
+  				'file' => 'home.txt',
+  				'route' => '/home/edit',
+  				'title' => __('edit.title.page.home'),
+  		));
+  	}
+
+  	public function editAbout() {
+  		return view('editor')->with(array(
+			'file' => 'about.txt',
+			'route' => '/about/edit',
+			'title' => __('edit.title.page.about'),
+		));
   	}
 
   	public function saveHTML(Request $request) {
@@ -27,21 +39,23 @@ class RoutingController extends Controller
   		}
   	}
 
+  	public function saveHTMLAbout(Request $request) {
+  		if(strlen($request->html) > 1) {
+  			Storage::disk('local')->put('about.txt', $request->html);
+  			return Redirect::to('home')->with('message', 'Page succesfully edited');
+  		} else {
+  			return Redirect::to('home')->with('error', 'That is not a valid page. please enter more than 1 character.');
+  		}
+  	}
+
   public function landing(){
-    return redirect('welcome');
+    return view('welcome');
   }
 
   public function statistics($id) {
   	$this->middleware('admin');
   	return view('quiz.statistics')->with(array(
   			'quiz' => Quiz::find($id),
-  	));
-  }
-
-  public function statistics($id) {
-  	$this->middleware('admin');
-  	return view('quiz.statistics')->with(array(
-  			'id' => $id,
   	));
   }
 
