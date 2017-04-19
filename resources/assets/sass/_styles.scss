@@ -8,10 +8,6 @@ body{
   background-color: $body-bg;
 }
 
-header{
-margin: 0 auto;
-}
-
 h1{
   font-family: "Myriad Pro", "Myriad", "Arial", "sans-serif";
   font-weight: bold;
@@ -92,5 +88,9 @@ i{
 }
 
 .email-fix:hover{
- color: #636b6f;
+ color:#636b6f;
+}
+
+#app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div.well:not(.panel*){
+  height: 575px;
 }

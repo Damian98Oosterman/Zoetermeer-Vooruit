@@ -50,11 +50,10 @@ class QuizController extends Controller
 		return Redirect::to('home')->with('message', __('quiz.message.delete.success'));
 	}
 
-
-
 	public function make($id){
+		$quiz = Quiz::find($id);
         return view('quiz.make')->with(array(
-            'questions' => Quiz::find($id)->questions
+            'questions' => $quiz->questions
         ));
     }
 

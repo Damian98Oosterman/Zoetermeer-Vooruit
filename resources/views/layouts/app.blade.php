@@ -20,11 +20,6 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-
-    <!-- ChartJS components -->
-    <script src="{{ asset('bower_components/chart.js/dist/Chart.min.js') }}"></script>
 </head>
 <body>
     <div id="app">
@@ -38,4 +33,7 @@
 @include('partials.footer')
 
 </body>
+    <!-- Scripts -->
+    <script src="{{ asset('bower_components/chart.js/dist/Chart.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </html>

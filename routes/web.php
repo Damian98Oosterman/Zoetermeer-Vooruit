@@ -13,8 +13,10 @@
 Route::get("contact", "RoutingController@contact");
 Route::get("welcome", "RoutingController@landing");
 Route::get("/", "RoutingController@landing");
-Route::get('/home/edit', 'RoutingController@editHome');
-Route::post('/home/edit', 'RoutingController@saveHTML');
+Route::get('/home/edit', 'RoutingController@editHome')->middleware('admin');
+Route::post('/home/edit', 'RoutingController@saveHTML')->middleware('admin');
+Route::get('/about/edit', 'RoutingController@editAbout')->middleware('admin');
+Route::post('/about/edit', 'RoutingController@saveHTMLAbout')->middleware('admin');
 Route::get("about", "RoutingController@about");
 
 Route::group(['prefix'=>'quiz'], function() {
