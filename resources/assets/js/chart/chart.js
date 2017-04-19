@@ -25,7 +25,6 @@ util.ajaxPost([], function(data) {
     window.pies = [];
     for (var question  in response) {
       if (response.hasOwnProperty(question)) {
-        console.log(question);
         configs[question] = {
             type: 'pie',
             data: {
@@ -44,7 +43,6 @@ util.ajaxPost([], function(data) {
 
       }
     }
-    console.log(JSON.stringify(configs));
 
     for (let question in response) {
         if (response.hasOwnProperty(question)) {
