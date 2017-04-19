@@ -43,7 +43,7 @@ class QuizController extends Controller
        		'quizzes' => Quiz::all(),
        ));
    }
-   
+
     public function delete(Request $request) {
 		$quiz = Quiz::find(intval($request->id));
 		$quiz->delete();
@@ -65,5 +65,18 @@ class QuizController extends Controller
         return view('quiz.make')->with(array(
             'questions' => Quiz::find($id)->questions
         ));
+    }
+
+    public function statistics(Request $request) {
+    	$quiz = Quiz::find($request->id);
+    	$stats = [];
+    	foreach ($quiz->questions as $question) {
+    		$stats[$question->title] = DB::select('SELECT COUNT(*) AS frequency, answer.name FROM reply
+INNER JOIN answer ON reply.answer_id=answer.id
+WHERE reply.question_id = ?
+GROUP BY answer.name
+ORDER BY frequency DESC;', [$question->id]);
+    	}
+    	return $stats;
     }
 }

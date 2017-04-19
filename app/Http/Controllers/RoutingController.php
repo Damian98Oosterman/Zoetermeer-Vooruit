@@ -30,6 +30,13 @@ class RoutingController extends Controller
     return view('welcome');
   }
 
+  public function statistics($id) {
+  	$this->middleware('admin');
+  	return view('quiz.statistics')->with(array(
+  			'id' => $id,
+  	));
+  }
+
   public function about(){
     return view('about');
   }

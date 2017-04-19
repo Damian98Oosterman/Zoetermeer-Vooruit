@@ -19,7 +19,7 @@ class admin
     {
         if(Auth::user() && Auth::user()->admin) {
         	return $next($request);
-        } 
-        return Redirect::to('welcome')->with('message', __('auth.fail.admin'));
+        }
+        return Redirect::to('welcome')->with('error', __('auth.permission.admin'));
     }
 }
