@@ -17,3 +17,4 @@ Homestead.yaml
 .project
 .settings/
 public/build/
+public/bower_components/
