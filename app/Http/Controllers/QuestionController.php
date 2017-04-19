@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Redirect;
 class QuestionController extends Controller
 {
     public function view($id=0){
-    	
+    	$quiz = Quiz::find($id)->questions();
         return view('questions.view')->with(array(
-          'questions' => Quiz::find($id)->questions,
+          'questions' => $quiz,
         ));
     }
 
