@@ -40,10 +40,6 @@ p{
   margin-top: 6%;
 }
 
-.mapmargin{
-  padding-bottom: 50px;
-}
-
 .email-fix{
  color:#636b6f;
  text-decoration:none;
@@ -52,3 +48,8 @@ p{
 .email-fix:hover{
  color:#636b6f;
 }
+
+// TODO: Find a proper fix for this
+#app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div{
+  height: 575px;
+} 

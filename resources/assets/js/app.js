@@ -5,9 +5,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+
 require('./bootstrap');
+
 require('./chart/chart.js');
 require('./quiz/form.js');
+
+require('./Chart.min.js');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
