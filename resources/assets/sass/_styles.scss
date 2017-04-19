@@ -48,3 +48,7 @@ p{
 .email-fix:hover{
  color:#636b6f;
 }
+
+#app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div{
+  height: 575px;
+} 
