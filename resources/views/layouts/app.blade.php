@@ -37,4 +37,7 @@
 @include('partials.footer')
 
 </body>
+    <!-- Scripts -->
+    <script src="{{ asset('bower_components/chart.js/dist/Chart.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </html>
