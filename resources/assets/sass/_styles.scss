@@ -40,17 +40,6 @@ p{
   margin-top: 6%;
 }
 
-.footer{
-  background-color: #222;
-  color: white;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-}
-.mapmargin{
-  padding-bottom: 50px;
-}
-
 .email-fix{
  color:#636b6f;
  text-decoration:none;
@@ -60,11 +49,7 @@ p{
  color:#636b6f;
 }
 
-h4{
-
-
-}
-
-#app{
-  display: block;
-}
+// TODO: Find a proper fix for this
+#app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div{
+  height: 575px;
+} 
