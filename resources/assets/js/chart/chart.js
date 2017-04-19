@@ -25,7 +25,6 @@ util.ajaxPost([], function(data) {
     window.pies = [];
     for (var question  in response) {
       if (response.hasOwnProperty(question)) {
-        console.log(question);
         configs[question] = {
             type: 'pie',
             data: {
@@ -44,14 +43,11 @@ util.ajaxPost([], function(data) {
 
       }
     }
-    console.log(JSON.stringify(configs));
 
     for (let question in response) {
         if (response.hasOwnProperty(question)) {
             questions[questions.length] = document.createElement("canvas");
 
-
-            questions[questions.length - 1].setAttribute('id', 'canvas');
             for (let i = 0; i < response[question].length; i++) {
                 configs[question].data.datasets[0].data.push(response[question][i].frequency);
                 configs[question].data.datasets[0].label = "lolz";
@@ -59,12 +55,12 @@ util.ajaxPost([], function(data) {
                 configs[question].data.datasets[0].backgroundColor.push(chartColors[i % chartColors.length]);
 
             }
+
             let header = document.createElement("div");
             header.setAttribute('id', 'chart-section');
             header.setAttribute('class', 'col-md-4 col-sm-6 col-xs-12');
             let h4 = document.createElement("h4");
 
-            console.log(configs[question]);
             h4.textContent = 'Vraag: ' + question;
             header.appendChild(h4);
             header.appendChild(questions[questions.length -1]);

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Redirect;
+use App\Quiz as Quiz;
 
 class RoutingController extends Controller
 {
@@ -33,7 +34,7 @@ class RoutingController extends Controller
   public function statistics($id) {
   	$this->middleware('admin');
   	return view('quiz.statistics')->with(array(
-  			'id' => $id,
+  			'quiz' => Quiz::find($id),
   	));
   }
 

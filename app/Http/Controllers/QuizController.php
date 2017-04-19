@@ -50,15 +50,6 @@ class QuizController extends Controller
 		return Redirect::to('home')->with('message', __('quiz.message.delete.success'));
 	}
 
-	
-	public function statistics($id) {
-		$quiz = Quiz::find($id);
-		$answers = [];
-		foreach($quiz->questions as $question){
-			$answers[$question->id] = DB::select('SELECT answer.name, COUNT(*) AS frequency FROM reply INNER JOIN answer ON reply.answer_id = answer.id WHERE answer.question_id IN (SELECT id FROM question WHERE question.quiz_id = ?)GROUP BY answer.name', [$id]);
-		}
-		return $answers;
-	}
 
 
 	public function make($id){
