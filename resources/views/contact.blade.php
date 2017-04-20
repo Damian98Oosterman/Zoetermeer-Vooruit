@@ -10,19 +10,19 @@
         <div class="col-sm-6">
             <div class="well">
             <legend class="text-center header">@lang('contact.panel.heading')</legend>
-                <h3><i class="fa fa-user fa-1x" style="line-height:6%;"></i> Contactpersoon:</h3>
+                <h3><i class="fa fa-user fa-1x" style="line-height:6%;"></i> @lang('contact.panel.legend.contact-name')</h3>
                 <p style="margin-top:6%;line-height:35%">M.J. (Juliëtte) Meurs-Troch</p>
                 <br />
                 <br />
-				<h3><i class="fa fa-home fa-1x" style="line-height:6%;"></i> Adres:</h3>
+				<h3><i class="fa fa-home fa-1x" style="line-height:6%;"></i> @lang('contact.panel.legend.adress')</h3>
 				<p style="margin-top:6%;line-height:35%">Van Boisotring 29,<br><br><br>2722 AA Zoetermeer</p>
                 <br />
                 <br />
-                <h3><i class="fa fa-envelope fa-1x" style="line-height:6%;"></i> E-Mail Adres:</h3>
+                <h3><i class="fa fa-envelope fa-1x" style="line-height:6%;"></i> @lang('contact.panel.legend.email')</h3>
                 <p style="margin-top:6%;line-height:35%"><a class="email-fix" href="mailto:contact@zoetermeervooruit.nl">contact@zoetermeervooruit.nl</a></p>
                 <br />
                 <br />
-                <h3><i class="fa fa-phone fa-1x" style="line-height:6%;"></i>Telefoonnummer:</h3>
+                <h3><i class="fa fa-phone fa-1x" style="line-height:6%;"></i>@lang('contact.panel.legend.phone')</h3>
                 <p style="margin-top:6%;line-height:35%">06-55727274</p>
 
             </div>
@@ -34,30 +34,30 @@
                         <legend class="text-center header">@lang('contact.form.heading')</legend>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="fname" name="name" type="text" placeholder="First Name" required>
+                                <input id="first-name" name="name" type="text" placeholder= @lang('contact.form.first-name') required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="lname" name="name" type="text" placeholder="Last Name"  required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="email" name="email" type="text" placeholder="Email Address"  required>
+                                <input id="last-name" name="name" type="text" placeholder= @lang('contact.form.last-name') required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="phone" name="phone" type="text" placeholder="Phone" >
+                                <input id="email" name="email" type="text" placeholder=@lang('contact.form.email')  required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here. We will get back to you within 2 business days." rows="7" required></textarea>
+                                <input id="phone" name="phone" type="text" placeholder= @lang('contact.form.phone') >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <textarea class="form-control" id="message" name="message" placeholder=@lang('contact.form.message') rows="7" required></textarea>
                             </div>
                         </div>
 

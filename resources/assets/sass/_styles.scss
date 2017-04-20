@@ -30,9 +30,6 @@ i{
 |--------------------------------------------------------------------------
 */
 
-#app > header > div > center > img{
-  margin-top: 50px;
-}
 
 #app{
   display: block;
@@ -57,12 +54,12 @@ i{
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.Title{
+.title{
   color: $zv-yellow
 }
 
 .dark{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: $dark-transparent;
   margin: 0;
 }
 
@@ -70,27 +67,20 @@ i{
   margin-top: 6%;
 }
 
-.footer{
-  background-color: #222;
-  color: white;
-  font-size: 15px;
-  text-align: center;
-  width: 100%;
-}
-
 .map-margin{
   padding-bottom: 50px;
 }
 
 .email-fix{
- color: #636b6f;
+ color: $email-fix;
  text-decoration: none;
 }
 
 .email-fix:hover{
- color:#636b6f;
+ color: $email-fix;
 }
 
+// TODO: Find a proper fix for this
 #app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div.well:not(.panel*){
   height: 575px;
 }
