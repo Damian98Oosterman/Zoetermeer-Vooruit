@@ -1,0 +1,19 @@
+
+
+input {
+  width: 40%;
+  outline: 0;
+  border-width: 0 0 2px 0;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    -webkit-transition: .4s ease;
+    transition: 0.4s ease;
+}
+input:focus {
+  width: 70%;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  -webkit-transition: .4s ease;
+  transition: 0.4s ease;
+  border-color: $zv-blue;
+}

@@ -29,6 +29,8 @@ $text-color: #636b6f;
 
 // Navbar
 $navbar-default-bg: #fff;
+$nav-gray: #cccccc;
+$nav-text: #3b3b3b;
 
 // Buttons
 $btn-default-color: $text-color;
@@ -41,5 +43,12 @@ $input-color-placeholder: lighten($text-color, 30%);
 // Panels
 $panel-default-heading-bg: #fff;
 
-$nav-gray: hsla(0, 0%, 80%, 1);
-$nav-text: #3b3b3b;
+//dark header background
+$dark-transparent: rgba(#000000, 0.5);
+
+//main logo colors
+$zv-blue: #3e6db5;
+$zv-yellow: #ffce07;
+
+//email
+$email-fix: #636b6f;

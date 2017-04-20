@@ -1,9 +1,15 @@
+/*
+|--------------------------------------------------------------------------
+| Standard (S)CSS-Selectors
+|--------------------------------------------------------------------------
+*/
+
 body{
   background-color: $body-bg;
 }
 
 h1{
-  font-family: "Myriad Pro", "Myriad", "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Myriad Pro", "Myriad", "Arial", "sans-serif";
   font-weight: bold;
 }
 
@@ -12,22 +18,48 @@ p{
   margin-bottom: 0%
 }
 
-.yellowHeader{
-  color: #ffce07;
-  font-size: 58px;
-  margin-bottom: 0;
+i{
+  color: $zv-blue;
 }
 
-.color-white{
-  background-color:#fff!important;
+
+
+/*
+|--------------------------------------------------------------------------
+| ID's
+|--------------------------------------------------------------------------
+*/
+
+
+#app{
+  display: block;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Classes
+|--------------------------------------------------------------------------
+*/
+
+
+.well{
+  background-color: #fbfbfb;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+  color: $zv-yellow
 }
 
 .dark{
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0;
-}
-
-.navspace{
+  background-color: $dark-transparent;
   margin: 0;
 }
 
@@ -35,13 +67,17 @@ p{
   margin-top: 6%;
 }
 
+.map-margin{
+  padding-bottom: 50px;
+}
+
 .email-fix{
- color:#636b6f;
- text-decoration:none;
+ color: $email-fix;
+ text-decoration: none;
 }
 
 .email-fix:hover{
- color:#636b6f;
+ color: $email-fix;
 }
 
 // TODO: Find a proper fix for this
