@@ -34,30 +34,30 @@
                         <legend class="text-center header">@lang('contact.form.heading')</legend>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="first-name" name="name" type="text" placeholder= @lang('contact.form.first-name') required>
+                                <input id="first-name" name="name" type="text" class="contact-form" placeholder= @lang('contact.form.first-name') required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="last-name" name="name" type="text" placeholder= @lang('contact.form.last-name') required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-10 col-md-offset-1">
-                                <input id="email" name="email" type="text" placeholder=@lang('contact.form.email')  required>
+                                <input id="last-name" name="name" type="text" class="contact-form" placeholder= @lang('contact.form.last-name') required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <input id="phone" name="phone" type="text" placeholder= @lang('contact.form.phone') >
+                                <input id="email" name="email" type="text" class="contact-form" placeholder=@lang('contact.form.email')  required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-10 col-md-offset-1">
-                                <textarea class="form-control" id="message" name="message" placeholder=@lang('contact.form.message') rows="7" required></textarea>
+                                <input id="phone" name="phone" type="text" class="contact-form" placeholder= @lang('contact.form.phone') >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-1">
+                                <textarea class="form-control" id="message" class="contact-form" name="message" placeholder="@lang('contact.form.message')" rows="7" required></textarea>
                             </div>
                         </div>
 
