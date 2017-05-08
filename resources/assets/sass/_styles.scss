@@ -79,6 +79,13 @@ i{
 .email-fix:hover{
  color: $email-fix;
 }
+.panel-body{
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+    .btn { text-align:center }
+}
 
 // TODO: Find a proper fix for this
 #app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div.well:not(.panel*){
