@@ -30,7 +30,7 @@
 
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading"><h4>@lang('dashboard.user.header')</h4></div>
+                <div class="panel-heading"><h4>@lang('dashboard.admin.header')</h4></div>
               <div class="panel-body">
                 <h3>@lang('dashboard.admin.quiz')</h3>
                 <div class="panel panel-default">
@@ -39,11 +39,11 @@
                     <small>[QUIZ_DESCRIPTION_PLACEHOLDER]</small>
                   </div>
                   <div class="col-md-2 col-sm-2 col-xs-12">
-                    <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 40%">bewerk quiz</button>
+                    <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 40%">@lang('dashboard.admin.edit')</button>
                   </div>
 
                   <div class="col-md-2 col-sm-2 col-xs-12">
-                    <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 40%">statistieken</button>
+                    <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 40%">@lang('dashboard.admin.statistics')</button>
                   </div>
               </div>
             </div>
