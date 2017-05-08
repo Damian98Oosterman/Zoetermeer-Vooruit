@@ -1,22 +1,49 @@
-.usercreationr{
-  position: fixed;
-  left: 50%;
-  right: 0%;
-  background-color: green;
-  height: 100%;
-}
-.usercreationl{
-  position: fixed;
-  left: 50%;
-  right: 0%;
-  background-color: yellow;
-  height: 100%;
-}
 .img-panel {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
-.paneltop
-{
+.panel-top {
   margin-top: 15%;
+}
+.user-creation-img {
+  margin: 0 auto !important;
+  display: block;
+}
+.label-centered {
+  display: block;
+  margin: 0 auto;
+}
+.label-alignment {
+  display: inline-block;
+}
+//Lablels zijn uitgecomment dus deze class heeft op dit moment geen nut
+.form-group label {
+  float: left;
+  text-align: left;
+}
+//Panel style
+.login-register-background {
+  background: linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  ), url('../../img/background/01.jpg');
+  background-size: cover;
+
+}
+.panel-border {
+  box-shadow: 0px 1px 1px grey;
+  border-radius: none !important;
+}
+.btn-inline {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}
+//Media queries
+@media screen and (max-width: 351px) {
+.respbreak {
+  display: block;
+  padding-bottom: 10px;
+}
 }
