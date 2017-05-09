@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
+  <style media="screen">
+    body{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url({{ asset('img/background/01.jpg') }});
+    }
+  </style>
+  
 <div class="container">
     <div class="row">
     	@if(Session::has('message'))
@@ -21,7 +30,7 @@
                   <small>[QUIZ_DESCRIPTION_PLACEHOLDER]</small>
                   </div>
                   <div class="col-md-4 col-sm-4 col-xs-10">
-                  <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 25%">@lang('dashboard.user.make')</button>
+                  <button class="quiz-button btn btn-success pull-right" type="button" name="button" style="margin-right: 25%">@lang('dashboard.user.make')</button>
                   </div>
               </div>
             </div>
@@ -39,11 +48,11 @@
                     <small>[QUIZ_DESCRIPTION_PLACEHOLDER]</small>
                   </div>
                   <div class="col-md-2 col-sm-2 col-xs-12">
-                    <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 40%">@lang('dashboard.admin.edit')</button>
+                    <button class="quiz-button btn btn-success pull-right" type="button" name="button" style="margin-right: 40%">@lang('dashboard.admin.edit')</button>
                   </div>
 
                   <div class="col-md-2 col-sm-2 col-xs-12">
-                    <button class="quiz-button btn pull-right" type="button" name="button" style="margin-right: 40%">@lang('dashboard.admin.statistics')</button>
+                    <button class="quiz-button btn btn-info pull-right" type="button" name="button" style="margin-right: 40%">@lang('dashboard.admin.statistics')</button>
                   </div>
               </div>
             </div>
