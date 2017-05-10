@@ -22,7 +22,7 @@
 <header>
   <center>
   <div class="dark">
-    <img src="{{ asset('img\logo\LogoLarge.png') }}" width="500" class="img-responsive">
+    <img src="{{ asset('img\logo\logo-large.png') }}" width="500" class="img-responsive">
     <h1 class="title">Omdat het ook anders kan!</h1>
   </div>
 </header>
