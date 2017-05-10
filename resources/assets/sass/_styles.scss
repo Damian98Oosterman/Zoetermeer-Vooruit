@@ -3,9 +3,14 @@
 | Standard (S)CSS-Selectors
 |--------------------------------------------------------------------------
 */
+html{height: 100%}
 
 body{
   background-color: $body-bg;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 h1{
@@ -79,6 +84,23 @@ i{
 .email-fix:hover{
  color: $email-fix;
 }
+.panel-body{
+  text-align: center;
+}
+
+.quiz-title{
+  text-align: left;
+}
+
+.quiz-button{
+  margin-top: 5%;
+}
+
+@media (max-width: 767px) {
+    .quiz-title { text-align: center }
+    .quiz-button { margin-top: 3%}
+}
+
 
 // TODO: Find a proper fix for this
 #app > div.container > div:nth-child(1) > div, #app > div.container > div:nth-child(2) > div.well:not(.panel*){

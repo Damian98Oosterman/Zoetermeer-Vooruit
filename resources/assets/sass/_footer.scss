@@ -1,6 +1,8 @@
-.footer{
-  background-color: $nav-gray;
-  color: $nav-text;
-  font-size: 15px;
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #cccccc;
   text-align: center;
 }
