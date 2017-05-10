@@ -5,11 +5,13 @@
 <div class="login-register-background">
 <div class="container">
     <div class="row">
+      <img src="{{ asset('img\logo\LogoLarge.png') }}" width="200" class="img-responsive user-creation-img user-image-margin">
         <div class="col-md-8 col-md-offset-2">
+          <div class="panel-label">
+          <div class="panel-heading panelhead-transperant-styling user-panel-page-properties"><strong>Register</strong></div>
+          </div>
             <div class="panel panel-default panel-top panel-border">
-              <img src="{{ asset('img\logo\LogoLarge.png') }}" width="200" class="img-responsive user-creation-img">
-                <div class="panel-heading"><strong>Register</strong></div>
-                <div class="panel-body">
+                <div class="panel-body panel-topmargin">
                     <form class="form-horizontal form-alignment" role="form" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
@@ -64,9 +66,9 @@
                         </div>
 
                         <div class="form-group">
-                          <div class="loginbutton col-md-10 col-md-offset-1">
-                            <span class="respbreak"><button type="submit" class="btn btn-primary loginbuttonstyle">Register</button></span>
-                            <button onclick="location.href='login';" class="btn btn-primary registerest">Hier al geweest? Log dan in!</button>
+                          <div class="loginbutton col-md-10 col-md-offset-1 btn-center-position">
+                            <span class="respbreak"><button type="submit" class="btn btn-primary btn-samewidth">Register</button></span>
+                            <button onclick="location.href='login';" class="btn btn-primary registerest btn-samewidth">Hier al geweest? Log dan in!</button>
                           </div>
 
                         </div>
