@@ -32,11 +32,10 @@
   padding-top: 20px;
 }
 .login-register-background {
-  background: linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)
-  ), url('../../img/background/01.jpg');
-  background-size: cover;
+  background-image: url('../../img/background/01.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 //Problem with overwriting border-radius so changed it to transperant color. If anyone has a solution go ahead
 .user-panel-page-properties
@@ -53,9 +52,19 @@ margin-top: 5% !important;
 }
 .btn-center-position {
 text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
 }
-.btn-samewidth
+.btn-fullwidth
 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.greenlake
+{
+  background-color: green;
+  height: 100%;
+  width: 100%;
 }
 //--------------------
 //Media queries

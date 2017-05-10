@@ -1,11 +1,10 @@
+<div class="login-register-background">
 @extends('layouts.app')
-
 @section('content')
   <div class="dark">
-<div class="login-register-background">
 <div class="container">
     <div class="row">
-      <img src="{{ asset('img\logo\LogoLarge.png') }}" width="200" class="img-responsive user-creation-img user-image-margin">
+      <img src="{{ asset('img\logo\logo-large.png') }}" width="200" class="img-responsive user-creation-img user-image-margin">
         <div class="col-md-8 col-md-offset-2">
           <div class="panel-label">
           <div class="panel-heading panelhead-transperant-styling user-panel-page-properties"><strong>Register</strong></div>
@@ -67,10 +66,9 @@
 
                         <div class="form-group">
                           <div class="loginbutton col-md-10 col-md-offset-1 btn-center-position">
-                            <span class="respbreak"><button type="submit" class="btn btn-primary btn-samewidth">Register</button></span>
-                            <button onclick="location.href='login';" class="btn btn-primary registerest btn-samewidth">Hier al geweest? Log dan in!</button>
+                            <span class="respbreak"><button type="submit" class="btn btn-primary btn-fullwidth">Register</button></span>
+                            <button onclick="location.href='login';" class="btn btn-primary registerest btn-fullwidth">Hier al geweest? Log dan in!</button>
                           </div>
-
                         </div>
                     </form>
                 </div>
