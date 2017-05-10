@@ -8,7 +8,7 @@ return [
   'admin' => [
     'header' => 'Admin Dashboard',
 		'quiz' => 'Open quizzes',
-    'edit' => 'Edit quiz',
+    'view' => 'Show questions',
     'statistics' => 'Statistics'
   ]
 ]

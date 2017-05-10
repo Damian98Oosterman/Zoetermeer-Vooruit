@@ -8,7 +8,7 @@ return [
   'admin' => [
     'header' => 'Admin Dashboard',
     'quiz' => 'Open enquêtes',
-    'edit' => 'Bewerk quiz',
+    'view' => 'Toon vragen',
     'statistics' => 'Statistieken'
   ]
 ]
