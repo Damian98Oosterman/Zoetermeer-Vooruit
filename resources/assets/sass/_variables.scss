@@ -59,12 +59,13 @@ $userpanel-label-textalign: center;
 $userpanel-label-fontsize: 20px;
 $userpanel-label-color: white;
 //--panel
-$userpanel-background-color: hsla(0, 0%, 80%, 0.67);
+$userpanel-background-color: rgba(204, 204, 204, 0.67);
 $userpanel-border-radius: none;
+$userpanel-margin-bottom: 5%;
 //--panel-topmargin
-$userpanel-panel-topmargin: 20px;
+$userpanel-panel-topmargin: 2%;
 //--panel-heading
-$userpanel-heading-background-color: hsla(0, 0%, 100%, 0) !important;
+$userpanel-heading-background-color: rgba(255, 255, 255, 0) !important;
 $userpanel-heading-paddnig-top: 20px;
 //--panel-border
 $userpanel-panel-border-box-shadow: 0px 1px 1px grey;

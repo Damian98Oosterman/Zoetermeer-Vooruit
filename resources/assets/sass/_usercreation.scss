@@ -22,8 +22,9 @@
 {
   background-color: $userpanel-background-color !important;
   border-radius: $userpanel-border-radius !important;
+  margin-bottom: $userpanel-margin-bottom;
 }
-.panel-topmargin {
+.panel-margins {
   margin-top: $userpanel-panel-topmargin;
 }
 .panel-heading {
