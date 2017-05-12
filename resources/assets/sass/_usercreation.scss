@@ -24,39 +24,29 @@
   margin-top: $userpanel-panel-topmargin;
 }
 .panel-heading {
-  background-color: hsla(0, 0%, 100%, 0) !important;
-  padding-top: 20px;
-}
-.login-register-background {
-  background-image: url('../../img/background/01.jpg');
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-}
-.user-image-margin {
-margin-top: 5% !important;
+  background-color: $userpanel-heading-background-color !important;
+  padding-top: $userpanel-heading-paddnig-top;
 }
 .panel-border {
-  box-shadow: 0px 1px 1px grey;
-  border-radius: none !important;
+  box-shadow: $userpanel-panel-border-box-shadow;
+  border-radius: $userpanel-panel-border-radius !important;
 }
 .btn-center-position {
-text-align: center;
-margin-top: 5px;
-margin-bottom: 5px;
+  text-align: $userpanel-btn-center-position-text-align;
+  margin-top: $userpanel-btn-center-position-margin-top;
+  margin-bottom: $userpanel-btn-center-position-margin-bottom;
 }
 .btn-fullwidth
 {
-  width: 100%;
-  margin-bottom: 5px;
+  width: $usepanel-btn-fullwidth-width;
+  margin-bottom: $userpanel-btn-fullwidth-margin-bottom;
 }
 //--------------------
 //Media queries
 //--------------------
 @media screen and (max-width: 351px) {
 .respbreak {
-  display: block;
-  padding-bottom: 10px;
+  display: $userpanel-respbreak-res-display;
+  padding-bottom: $userpanel-respbreak-res-padding-bottom;
 }
 }

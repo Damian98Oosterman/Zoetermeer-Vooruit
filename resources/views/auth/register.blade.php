@@ -1,4 +1,10 @@
-<div class="login-register-background">
+<style media="screen">
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url({{ asset('img/background/01.jpg') }});
+}
+</style>
 @extends('layouts.app')
 @section('content')
   <div class="dark">
