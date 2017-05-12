@@ -43,6 +43,25 @@ $input-color-placeholder: lighten($text-color, 30%);
 // Panels
 $panel-default-heading-bg: #fff;
 
+//userpanel
+$userpanel-background-color: hsla(0, 0%, 80%, 0.67);
+$userpanel-margin-top: 2%;
+$userpanel-usercreationimg-margin: 0 auto;
+$userpanel-usercreationimg-display: block;
+$userpanel-label-alignment-display: inline-block;
+$userpanel-label-margin: 0 auto;
+$userpanel-label-textalign: center;
+$userpanel-label-fontsize: 20px;
+$userpanel-label-color: white;
+$userpanel-panel-topmargin: 20px;
+$userpanel-border-radius: none;
+$userpanel-heading-background-color: hsla(0, 0%, 100%, 0) !important;
+$userpanel-heading-paddnig-top: 20px;
+$userpanel-background-image: ;
+$userpanel-background-image-repeat: ;
+$userpanel-fullwidth: 100%;
+$userpanel-fullheigth: 100%;
+
 //dark header background
 $dark-transparent: rgba(#000000, 0.5);
 

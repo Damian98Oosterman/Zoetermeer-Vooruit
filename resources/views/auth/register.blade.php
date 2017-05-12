@@ -7,7 +7,7 @@
       <img src="{{ asset('img\logo\logo-large.png') }}" width="200" class="img-responsive user-creation-img user-image-margin">
         <div class="col-md-8 col-md-offset-2">
           <div class="panel-label">
-          <div class="panel-heading panelhead-transperant-styling user-panel-page-properties"><strong>Register</strong></div>
+          <div class="panel-heading panelhead-transperant-styling"><strong>Register</strong></div>
           </div>
             <div class="panel panel-default panel-top panel-border">
                 <div class="panel-body panel-topmargin">
