@@ -1,68 +1,52 @@
-.img-panel {
-  display: block;
-  max-width: 100%;
-}
 .panel-top {
-  margin-top: 2%;
+  margin-top: $userpanel-margin-top;
 }
 .user-creation-img {
-  margin: 0 auto !important;
-  display: block;
+  margin: $userpanel-usercreationimg-margin !important;
+  display: $userpanel-usercreationimg-display;
 }
 .label-alignment {
   display: inline-block;
 }
 //Panel style
 .panel-label {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20px;
-  color: white;
+  margin: $userpanel-label-margin;
+  text-align: $userpanel-label-textalign;
+  font-size: $userpanel-label-fontsize;
+  color: $userpanel-label-color;
 }
 .panel
 {
-  background-color: hsla(0, 0%, 80%, 0.67) !important;
-  border-radius: none;
+  background-color: $userpanel-background-color !important;
+  border-radius: $userpanel-border-radius !important;
 }
 .panel-topmargin {
-  margin-top: 20px;
+  margin-top: $userpanel-panel-topmargin;
 }
 .panel-heading {
-  background-color: hsla(0, 0%, 100%, 0) !important;
-  padding-top: 20px;
-}
-.login-register-background {
-  background: linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5)
-  ), url('../../img/background/01.jpg');
-  background-size: cover;
-}
-//Problem with overwriting border-radius so changed it to transperant color. If anyone has a solution go ahead
-.user-panel-page-properties
-{
-  background-color: rgba(255, 255, 255, 0.07);
-}
-//
-.user-image-margin {
-margin-top: 5% !important;
+  background-color: $userpanel-heading-background-color !important;
+  padding-top: $userpanel-heading-paddnig-top;
 }
 .panel-border {
-  box-shadow: 0px 1px 1px grey;
-  border-radius: none !important;
+  box-shadow: $userpanel-panel-border-box-shadow;
+  border-radius: $userpanel-panel-border-radius !important;
 }
 .btn-center-position {
-text-align: center;
+  text-align: $userpanel-btn-center-position-text-align;
+  margin-top: $userpanel-btn-center-position-margin-top;
+  margin-bottom: $userpanel-btn-center-position-margin-bottom;
 }
-.btn-samewidth
+.btn-fullwidth
 {
+  width: $usepanel-btn-fullwidth-width;
+  margin-bottom: $userpanel-btn-fullwidth-margin-bottom;
 }
 //--------------------
 //Media queries
 //--------------------
 @media screen and (max-width: 351px) {
 .respbreak {
-  display: block;
-  padding-bottom: 10px;
+  display: $userpanel-respbreak-res-display;
+  padding-bottom: $userpanel-respbreak-res-padding-bottom;
 }
 }

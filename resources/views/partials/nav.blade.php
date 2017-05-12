@@ -60,4 +60,3 @@
       </div>
   </nav>
 @endsection
-<div class="navspace"></div>

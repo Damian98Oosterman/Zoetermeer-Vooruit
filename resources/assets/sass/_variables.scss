@@ -43,6 +43,42 @@ $input-color-placeholder: lighten($text-color, 30%);
 // Panels
 $panel-default-heading-bg: #fff;
 
+//userpanel
+//--panel-top
+$userpanel-margin-top: 2%;
+//--usr-creation-img
+$userpanel-usercreationimg-margin: 0 auto;
+$userpanel-usercreationimg-display: block;
+//--label-alignment
+$userpanel-label-alignment-display: inline-block;
+//--panel-label
+$userpanel-label-margin: 0 auto;
+$userpanel-label-textalign: center;
+$userpanel-label-fontsize: 20px;
+$userpanel-label-color: white;
+//--panel
+$userpanel-background-color: hsla(0, 0%, 80%, 0.67);
+$userpanel-border-radius: none;
+//--panel-topmargin
+$userpanel-panel-topmargin: 20px;
+//--panel-heading
+$userpanel-heading-background-color: hsla(0, 0%, 100%, 0) !important;
+$userpanel-heading-paddnig-top: 20px;
+//--panel-border
+$userpanel-panel-border-box-shadow: 0px 1px 1px grey;
+$userpanel-panel-border-radius: none;
+//--btn-center-position
+$userpanel-btn-center-position-text-align: center;
+$userpanel-btn-center-position-margin-top: 5px;
+$userpanel-btn-center-position-margin-bottom: 5px;
+//--btn-fullwidth
+$usepanel-btn-fullwidth-width: 100%;
+$userpanel-btn-fullwidth-margin-bottom: 5px;
+//--@media screen and (max-width: 351px)
+$userpanel-respbreak-res-display: block;
+$userpanel-respbreak-res-padding-bottom: 10px;
+
+
 //dark header background
 $dark-transparent: rgba(#000000, 0.5);
 
