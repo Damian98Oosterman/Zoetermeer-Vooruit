@@ -5,8 +5,11 @@
   margin: $userpanel-usercreationimg-margin !important;
   display: $userpanel-usercreationimg-display;
 }
+.user-image-margin {
+  margin-top: $user-image-margin-top !important;
+}
 .label-alignment {
-  display: inline-block;
+  display: $userpanel-label-alignment-display;
 }
 //Panel style
 .panel-label {
