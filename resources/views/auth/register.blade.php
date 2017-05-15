@@ -16,7 +16,7 @@ body{
           <div class="panel-heading panelhead-transperant-styling"><strong>Register</strong></div>
           </div>
             <div class="panel panel-default panel-top panel-border">
-                <div class="panel-body panel-topmargin">
+                <div class="panel-body panel-margins">
                     <form class="form-horizontal form-alignment" role="form" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 

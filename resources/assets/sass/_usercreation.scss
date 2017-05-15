@@ -5,8 +5,11 @@
   margin: $userpanel-usercreationimg-margin !important;
   display: $userpanel-usercreationimg-display;
 }
+.user-image-margin {
+  margin-top: $user-image-margin-top !important;
+}
 .label-alignment {
-  display: inline-block;
+  display: $userpanel-label-alignment-display;
 }
 //Panel style
 .panel-label {
@@ -19,8 +22,9 @@
 {
   background-color: $userpanel-background-color !important;
   border-radius: $userpanel-border-radius !important;
+  margin-bottom: $userpanel-margin-bottom;
 }
-.panel-topmargin {
+.panel-margins {
   margin-top: $userpanel-panel-topmargin;
 }
 .panel-heading {

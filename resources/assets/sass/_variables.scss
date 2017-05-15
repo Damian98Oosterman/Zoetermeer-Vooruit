@@ -1,10 +1,10 @@
 
 // Body
-$body-bg: hsla(233, 25%, 97%, 1);
+$body-bg: rgba(#f5f6f9, 1);
 
 //hsl(197, 39%, 94%)
 
-$bright-blue: hsla(233, 100%, 91%, 1);
+$bright-blue: rgba(#d1d6ff, 1);
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -49,6 +49,8 @@ $userpanel-margin-top: 2%;
 //--usr-creation-img
 $userpanel-usercreationimg-margin: 0 auto;
 $userpanel-usercreationimg-display: block;
+//--user-image-margin
+$user-image-margin-top: 5%;
 //--label-alignment
 $userpanel-label-alignment-display: inline-block;
 //--panel-label
@@ -57,12 +59,13 @@ $userpanel-label-textalign: center;
 $userpanel-label-fontsize: 20px;
 $userpanel-label-color: white;
 //--panel
-$userpanel-background-color: hsla(0, 0%, 80%, 0.67);
+$userpanel-background-color: rgba(204, 204, 204, 0.67);
 $userpanel-border-radius: none;
+$userpanel-margin-bottom: 5%;
 //--panel-topmargin
-$userpanel-panel-topmargin: 20px;
+$userpanel-panel-topmargin: 2%;
 //--panel-heading
-$userpanel-heading-background-color: hsla(0, 0%, 100%, 0) !important;
+$userpanel-heading-background-color: rgba(255, 255, 255, 0) !important;
 $userpanel-heading-paddnig-top: 20px;
 //--panel-border
 $userpanel-panel-border-box-shadow: 0px 1px 1px grey;
