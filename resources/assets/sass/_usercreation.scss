@@ -2,55 +2,64 @@
   margin-top: $userpanel-margin-top;
 }
 .user-creation-img {
-  margin: $userpanel-usercreationimg-margin !important;
-  display: $userpanel-usercreationimg-display;
-}
-.user-image-margin {
+  margin: $userpanel-usercreationimg-margin;
   margin-top: $user-image-margin-top !important;
 }
 .label-alignment {
   display: $userpanel-label-alignment-display;
 }
-//Panel style
 .panel-label {
   margin: $userpanel-label-margin;
   text-align: $userpanel-label-textalign;
   font-size: $userpanel-label-fontsize;
   color: $userpanel-label-color;
 }
-.panel
-{
-  background-color: $userpanel-background-color !important;
-  border-radius: $userpanel-border-radius !important;
+.panel {
+  background-color: $userpanel-background-color;
+  border-radius: $userpanel-border-radius;
   margin-bottom: $userpanel-margin-bottom;
 }
 .panel-margins {
   margin-top: $userpanel-panel-topmargin;
 }
 .panel-heading {
-  background-color: $userpanel-heading-background-color !important;
+  background-color: $userpanel-heading-background-color;
   padding-top: $userpanel-heading-paddnig-top;
 }
 .panel-border {
   box-shadow: $userpanel-panel-border-box-shadow;
-  border-radius: $userpanel-panel-border-radius !important;
+  border-radius: $userpanel-panel-border-radius;
 }
+
+.usercreation-button {
+  width: $usepanel-btn-fullwidth-width;
+  text-align: $userpanel-btn-center-position-text-align;
+}
+.usercreation-button-position {
+  margin-top: $userpanel-btn-center-position-margin-top;
+  margin-bottom: $userpanel-btn-fullwidth-margin-bottom;
+}
+
+
 .btn-center-position {
   text-align: $userpanel-btn-center-position-text-align;
   margin-top: $userpanel-btn-center-position-margin-top;
   margin-bottom: $userpanel-btn-center-position-margin-bottom;
 }
-.btn-fullwidth
-{
+.btn-fullwidth {
   width: $usepanel-btn-fullwidth-width;
   margin-bottom: $userpanel-btn-fullwidth-margin-bottom;
 }
-//--------------------
-//Media queries
-//--------------------
+/*--------------------
+Media queries
+--------------------*/
 @media screen and (max-width: 351px) {
 .respbreak {
   display: $userpanel-respbreak-res-display;
   padding-bottom: $userpanel-respbreak-res-padding-bottom;
 }
+}
+.panel-responsive-fix
+{
+
 }
