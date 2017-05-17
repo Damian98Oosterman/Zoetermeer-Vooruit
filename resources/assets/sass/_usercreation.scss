@@ -13,6 +13,7 @@
   text-align: $userpanel-label-textalign;
   font-size: $userpanel-label-fontsize;
   color: $userpanel-label-color;
+  margin-top: $userpanel-margin-top;
 }
 .panel {
   background-color: $userpanel-background-color;
@@ -58,8 +59,4 @@ Media queries
   display: $userpanel-respbreak-res-display;
   padding-bottom: $userpanel-respbreak-res-padding-bottom;
 }
-}
-.panel-responsive-fix
-{
-
 }

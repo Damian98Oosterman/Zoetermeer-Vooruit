@@ -7,10 +7,9 @@ body{
 </style>
 @extends('layouts.app')
 @section('content')
-  <div class="dark">
+<div class="dark">
 <div class="container">
     <div class="row">
-      <img src="{{ asset('img\logo\logo-large.png') }}" width="150" class="img-responsive user-creation-img user-image-margin">
         <div class="col-md-8 col-md-offset-2">
           <div class="panel-label">
           <div class="panel-heading panelhead-transperant-styling"><strong>Register</strong></div>
