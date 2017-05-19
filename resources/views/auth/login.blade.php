@@ -15,7 +15,7 @@ body{
                 <div class="panel-heading panelhead-transperant-styling"><strong>Login</strong></div>
               </div>
               <div class="panel panel-defalt panel-top panel-border">
-                <div class="panel-body panel-margins">
+                <div class="panel-body panel-margin-top">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
