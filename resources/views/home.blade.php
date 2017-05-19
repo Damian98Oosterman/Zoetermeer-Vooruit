@@ -1,7 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
-
+<style media="screen">
+body{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url({{ asset('img/background/01.jpg') }});
+}
+</style>
   <div class="container">
     <div class="row">
       @if(Session::has('message'))
