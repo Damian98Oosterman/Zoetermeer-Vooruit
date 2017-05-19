@@ -16,7 +16,7 @@ body{
       @if(Session::has('error'))
         <div class="alert alert-danger">{{Session::get('error')}}</div>
       @endif
-
+      @if (Auth::user()->admin===0)
       <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
           <div class="panel-heading"><h4>@lang('dashboard.user.header')</h4></div>
@@ -36,6 +36,7 @@ body{
           </div>
         </div>
       </div>
+    @endif
 
       @if (Auth::user()->admin===1)
         <div class="col-md-8 col-md-offset-2">
