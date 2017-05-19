@@ -24,7 +24,7 @@ body{
     <h1 class="title">Omdat het ook anders kan!</h1>
   </header>
 </div>
-  <div class="container" style="background-color: white; width: 100%;">
+  <div class="container" style="background-color: white; width: 100%; margin-top: 0px">
     <section>
         {!! Storage::get('home.txt') !!}
     </section>
