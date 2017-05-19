@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class PageRequest extends FormRequest
+class SaveFileRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,9 +25,9 @@ class PageRequest extends FormRequest
     public function rules()
     {
         return [
-            'file' => ['unique:page','required', 'max:128'],
-            'content' => ['required','min:1'],
-        	'hidden' => ['required'],
+            'file' => ['required', 'max:128'],
+            'content' => ['required', 'min:1'],
+            'hidden' => ['required'],
         ];
     }
 }

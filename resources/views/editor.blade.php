@@ -6,7 +6,7 @@
     <script>tinymce.init({ selector:'textarea' });</script>
 <section class="color-white">
   <div class="container">
-      <form class="" action="$route" method="post">
+      <form class="" action="{{$route}}" method="post">
         {{ csrf_field() }}
         <h2>{{$title}}</h2>
         <textarea name="html">{!! Storage::get($file) !!}</textarea>

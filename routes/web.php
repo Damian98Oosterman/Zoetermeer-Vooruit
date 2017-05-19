@@ -49,4 +49,7 @@ Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
-Route::get('/{page}', 'CMSController@index');
+Route::post('cms/edit', 	'CMSController@editPage'	)->middleware('admin');
+Route::get('cms/create', 	'CMSController@createForm'	)->middleware('admin');
+Route::post('cms/create', 	'CMSController@createPage'	)->middleware('admin');
+Route::any('{page}', 		'CMSController@index'		);
