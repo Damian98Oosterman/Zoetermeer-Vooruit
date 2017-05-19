@@ -129,6 +129,12 @@ li{
   color: $text-color;
 }
 
+.landing-header{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/img/background/01.jpg');
+}
+
 @media (max-width: 767px) {
     .quiz-title { text-align: center }
     .quiz-button { margin-top: 3%}
