@@ -6,12 +6,13 @@
   <script>tinymce.init({ selector:'textarea',
   content_css: 'https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css',
   noneditable_noneditable_class: 'fa',
-  plugins: 'fontawesome noneditable',
-  toolbar: 'fontawesome',
+  toolbar: 'fontawesome forecolor backcolor',
+  plugins: 'fontawesome noneditable textcolor',
+  textcolor_cols: "5",
   extended_valid_elements: 'span[*]' });</script>
 <section class="color-white">
   <div class="container">
-      <form class="" action="$route" method="post">
+      <form class="" action="{{$route}}" method="post">
         {{ csrf_field() }}
         <h2>{{$title}}</h2>
         <textarea name="html">{!! Storage::get($file) !!}</textarea>

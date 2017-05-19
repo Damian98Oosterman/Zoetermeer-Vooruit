@@ -3,6 +3,10 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #cccccc;
+  background-color: $nav-bg;
+  color: lighten($nav-bg,40);
   text-align: center;
+  i{
+    color: white;
+  }
 }

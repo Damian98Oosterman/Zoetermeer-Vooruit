@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
+                <div class="panel well">
                     <div class="panel-heading">@lang('quiz.read.title')</div>
                     <div class="panel-body">
                         <table class="table">

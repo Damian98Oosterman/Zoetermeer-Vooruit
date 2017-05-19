@@ -1,9 +1,22 @@
 .navbar.navbar-default {
-	background-color: $nav-gray;
+	background-color: $nav-bg;
 	a {
 		color: $nav-text;
 	}
 	li > a {
 		color: $nav-text;
+	}
+}
+.dropdown-menu{
+	background-color: lighten($nav-bg,40);
+}
+
+.dropdown-toggle{
+background-color: $nav-bg;
+}
+
+.dropdown{
+	.open{
+		background-color: lighten($nav-bg,40);
 	}
 }

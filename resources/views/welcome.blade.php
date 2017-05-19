@@ -18,9 +18,8 @@ body{
     toolbar: 'fontawesome',
     extended_valid_elements: 'span[*]' });</script>
 
-<header>
-  <center>
-    <img src="{{ asset('img/logo/logo-large.png') }}" width="500" class="img-responsive">
+<header style="text-align: center">
+    <img src="{{ asset('img/logo/logo-large.png') }}" width="500" class="img-responsive center-block">
     <h1 class="title">Omdat het ook anders kan!</h1>
   </header>
 </div>

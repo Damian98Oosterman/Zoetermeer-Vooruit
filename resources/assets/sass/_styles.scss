@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 /*
 |--------------------------------------------------------------------------
 | Standard (S)CSS-Selectors
@@ -11,10 +12,10 @@ body{
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1{
-  font-family: "Myriad Pro", "Myriad", "Arial", "sans-serif";
   font-weight: bold;
 }
 
@@ -57,11 +58,24 @@ li{
 
 
 .well{
-  background-color: #fbfbfb;
+  background-color: #efefef;
   border: none;
   border-radius: 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
+
+.maps{
+  border-bottom: 3px solid $nav-bg;
+}
+
+  .quiz-container{
+    border-bottom: 1px solid $nav-bg;
+    margin-top: 2%;
+    padding-bottom: 1%;
+    h4{
+      font-weight: bold;
+    }
+  }
 
 .title{
   color: $zv-yellow
@@ -98,6 +112,9 @@ li{
 }
 .panel-body{
   text-align: center;
+  h3{
+    margin-top: 73%;
+  }
 }
 
 .quiz-title{
@@ -107,6 +124,11 @@ li{
 .quiz-button{
   margin-top: 5%;
 }
+
+.auth-title{
+  color: $text-color;
+}
+
 @media (max-width: 767px) {
     .quiz-title { text-align: center }
     .quiz-button { margin-top: 3%}
