@@ -11,7 +11,8 @@ return [
     'view' => 'Show questions',
     'statistics' => 'Statistics',
 		'home-edit' => 'Edit homepage',
-		'about-edit' => 'Edit about us page'
+		'about-edit' => 'Edit about us page',
+		'new-quiz' => 'Create new quiz'
   ]
 ]
 ?>

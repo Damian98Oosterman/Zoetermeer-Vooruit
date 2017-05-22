@@ -14,9 +14,11 @@
     <h1 class="title">Omdat het ook anders kan!</h1>
   </header>
 </div>
-  <div class="container" style="background-color: white; width: 100%; margin-top: 0px">
+  <div class="container" style="width: 100%; margin-top: 0px">
     <section>
+      <div class="well">
         {!! Storage::get('home.txt') !!}
+      </div>
     </section>
   </div>
 @endsection

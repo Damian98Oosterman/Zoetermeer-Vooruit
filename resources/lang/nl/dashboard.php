@@ -11,7 +11,8 @@ return [
     'view' => 'Toon vragen',
     'statistics' => 'Statistieken',
 		'home-edit' => 'Bewerk homepagina',
-		'about-edit' => 'Bewerk over ons pagina'
+		'about-edit' => 'Bewerk over ons pagina',
+		'new-quiz' => 'Nieuwe quiz aanmaken'
   ]
 ]
 ?>
