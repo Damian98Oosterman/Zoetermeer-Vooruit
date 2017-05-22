@@ -62,4 +62,8 @@ class RoutingController extends Controller
   public function about(){
     return view('about');
   }
+
+	public function email()	{
+		return view('auth/passwords/email');
+	}
 }

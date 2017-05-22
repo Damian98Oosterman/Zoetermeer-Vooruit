@@ -3,12 +3,10 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel well">
-                    <div class="panel-heading">@lang('quiz.read.title')</div>
-                    <div class="panel-body">
-                        <table class="table">
-                            <thead>
+            <div class="col-md-12 col-sm-2">
+                <div class=" well">
+                        <table class="table table-responsive">
+                            <thead class="thead-inverse">
                                 <tr>
                                     <th>@lang('quiz.read.column.title')</th>
                                     <th>@lang('quiz.read.column.description')</th>
@@ -31,10 +29,10 @@
                                             <td>{{$openDate}}</td>
                                             <td>{{$closeDate}}</td>
                                             <td>
-                                            	<a href="/quiz/{{$quiz->id}}" class="btn btn-success">@lang('quiz.read.action')</a>
+                                            	<a href="/quiz/{{$quiz->id}}" class="btn btn-success btn-sm action-btn">@lang('quiz.read.action')</a>
 												{{Form::open(['url' => 'quiz/delete'])}}
 												{{Form::hidden('id', $quiz->id)}}
-												{{Form::submit(__('quiz.message.delete.button'),['class' => 'btn btn-danger'])}}
+												{{Form::submit(__('quiz.message.delete.button'),['class' => 'btn btn-danger btn-sm action-btn'])}}
 												{{Form::close()}}
                                             </td>
                                         </tr>
@@ -45,5 +43,4 @@
                 </div>
             </div>
         </div>
-    </div>
 @endsection

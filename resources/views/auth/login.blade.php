@@ -2,12 +2,8 @@
 @section('content')
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="panel-label">
+      <div class="col-md-8 col-md-offset-2 well">
           <h3 class="auth-title">Login</h3>
-        </div>
-        <div class="panel panel-defalt panel-top panel-border well">
-          <div class="panel-body panel-margins">
             <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
               {{ csrf_field() }}
 
@@ -41,10 +37,10 @@
 
               <div class="form-group">
                 <div class="col-md-10 col-md-offset-1">
-                  <button type="submit" class="btn btn-primary btn-fullwidth">
+                  <button type="submit" class="btn btn-success btn-fullwidth">
                     Login
                   </button>
-                  <a class="btn btn-primary btn-fullwidth" href="/register">
+                  <a class="btn btn-info btn-fullwidth" href="/register">
                     Nog geen lid? Meld je aan!
                   </a>
                   <a class="btn btn-link" href="{{ route('password.request') }}">
@@ -58,7 +54,4 @@
             </form>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 @endsection
