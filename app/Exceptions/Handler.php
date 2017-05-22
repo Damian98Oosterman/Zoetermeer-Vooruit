@@ -62,4 +62,22 @@ class Handler extends ExceptionHandler
 
         return redirect()->guest(route('login'));
     }
+
+  /**
+ * Throw a 404 is a model record isn't found
+ * @param  ModelNotFoundException
+ * @return [type]
+ */
+  protected function renderModelNotFoundException(ModelNotFoundException $e)
+  {
+    if (view()->exists('errors.404'))
+    {
+      return response()->view('errors.404', [], 404);
+    }
+    else
+    {
+      return (new SymfonyDisplayer(config('app.debug')))
+        ->createResponse($e);
+    }
+  }
 }
