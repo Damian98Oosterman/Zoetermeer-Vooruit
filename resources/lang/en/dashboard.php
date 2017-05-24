@@ -9,7 +9,10 @@ return [
     'header' => 'Admin Dashboard',
 		'quiz' => 'Open quizzes',
     'view' => 'Show questions',
-    'statistics' => 'Statistics'
+    'statistics' => 'Statistics',
+		'home-edit' => 'Edit homepage',
+		'about-edit' => 'Edit about us page',
+		'new-quiz' => 'Create new quiz'
   ]
 ]
 ?>

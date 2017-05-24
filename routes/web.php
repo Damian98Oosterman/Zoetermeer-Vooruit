@@ -40,3 +40,5 @@ Route::group(['prefix'=>'question'], function(){
 Route::get('/home', 'HomeController@index');
 
 Auth::routes();
+
+Route::get('/email', 'RoutingController@email');

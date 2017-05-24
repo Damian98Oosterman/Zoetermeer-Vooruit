@@ -3,11 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default paneltop">
-                <div class="panel-heading">Reset Password</div>
-
-                <div class="panel-body">
+        <div class="col-md-8 col-md-offset-2 well">
+            <h3 class="auth-title">Reset password</h3>
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
@@ -62,7 +59,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-succes">
                                     Reset Password
                                 </button>
                             </div>
@@ -71,6 +68,4 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
 @endsection

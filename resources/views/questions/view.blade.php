@@ -4,13 +4,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
+                <div class="well">
 
-                    <div class="panel-heading">
-                        @lang('question.read.heading')
-                    </div>
+                      <h2> @lang('question.read.heading')</h2> 
 
-                    <div class="panel-body">
                         <table class="table">
                             <thead>
                             <tr>

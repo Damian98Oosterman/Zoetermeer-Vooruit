@@ -1,17 +1,15 @@
 
 // Body
-$body-bg: hsla(233, 25%, 97%, 1);
+$body-bg: rgba(#e8e8e8, 1);
 
 //hsl(197, 39%, 94%)
 
-$bright-blue: hsla(233, 100%, 91%, 1);
+$bright-blue: rgba(#d1d6ff, 1);
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
 $list-group-border: $laravel-border-color;
 $navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
 
 // Brands
 $brand-primary: #3097D1;
@@ -29,8 +27,8 @@ $text-color: #636b6f;
 
 // Navbar
 $navbar-default-bg: #fff;
-$nav-gray: #cccccc;
-$nav-text: #3b3b3b;
+$nav-bg: #3e6db5;
+$nav-text: #fff;
 
 // Buttons
 $btn-default-color: $text-color;
@@ -40,8 +38,6 @@ $input-border: lighten($text-color, 40%);
 $input-border-focus: lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 
-// Panels
-$panel-default-heading-bg: #fff;
 
 //dark header background
 $dark-transparent: rgba(#000000, 0.5);
