@@ -11,7 +11,7 @@
   textcolor_cols: "5",
   extended_valid_elements: 'span[*]' });</script>
 <section class="color-white">
-  <div class="container">
+  <div class="container" height="60%">
       <form class="" action="{{$route}}" method="post">
         {{ csrf_field() }}
         <h2>{{$title}}</h2>

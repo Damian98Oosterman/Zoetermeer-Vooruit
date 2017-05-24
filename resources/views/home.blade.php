@@ -25,7 +25,7 @@
           <div class="tagline overtext">{{$quiz->description}}<br>
             <div class="buttons">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <a class="quiz-button btn btn-success" type="button" name="button" href="{{url('/quiz/' . $quiz->id . '/make')}}">@lang('dashboard.user.make')</a>
+              <a class="quiz-button btn btn-success btn-lg" type="button" name="button" href="{{url('/quiz/' . $quiz->id . '/make')}}">@lang('dashboard.user.make')</a>
             </div>
           </div>
           </div>
@@ -58,10 +58,10 @@
             <div class="buttons">
 
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <a class="quiz-button btn btn-success" type="button" name="button" href="{{url('/quiz/' . $quiz->id)}}">@lang('dashboard.admin.view')</a>
+              <a class="quiz-button btn btn-success btn-lg" type="button" name="button" href="{{url('/quiz/' . $quiz->id)}}">@lang('dashboard.admin.view')</a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
-              <a class="quiz-button btn btn-info" type="button" name="button" href="{{url('/quiz/' . $quiz->id . '/statistics')}}">@lang('dashboard.admin.statistics')</a>
+              <a class="quiz-button btn btn-info btn-lg" type="button" name="button" href="{{url('/quiz/' . $quiz->id . '/statistics')}}">@lang('dashboard.admin.statistics')</a>
             </div>
                         </div>
           </div>
